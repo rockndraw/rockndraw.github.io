@@ -35,28 +35,6 @@
 //=======================================================
 // Circle Bar
 //=======================================================
-    if ($('.singleSkill').length > 0) {
-        $('.skillArea').appear(function () {
-            $(".cmskill").each(function () {
-                var pint = $(this).attr('data-skills');
-                var decs = pint * 100;
-                var grs = $(this).attr('data-gradientstart');
-                var gre = $(this).attr('data-gradientend');
-
-                $(this).circleProgress({
-                    value: pint,
-                    startAngle: -Math.PI / 4 * 2,
-                    fill: {gradient: [[grs, 1], [gre, .2]], gradientAngle: Math.PI / 4 * 2},
-                    lineCap: 'round',
-                    thickness: 22,
-                    animation: {duration: 1800},
-                    size: 270
-                }).on('circle-animation-progress', function (event, progress) {
-                    $(this).find('strong').html(parseInt(decs * progress) + '<span>%</span>');
-                });
-            });
-        });
-    }
     //=======================================================
     // Portfolio Hover
     //=======================================================
@@ -234,27 +212,6 @@
             }
         });
     }
-    //========================================================
-    // Fun Fact
-    //========================================================
-    $('.funFactArea').appear(function () {
-        $('.mycounter').each(function () {
-            var $this = $(this);
-            jQuery({Counter: 0}).animate({Counter: $this.attr('data-counter')}, {
-                duration: 6000,
-                easing: 'swing',
-                step: function () {
-                    var num = Math.ceil(this.Counter).toString();
-                    if (Number(num) > 999) {
-                        while (/(\d+)(\d{3})/.test(num)) {
-                            num = num.replace(/(\d+)(\d{3})/, '<span>' + '$1' + '</span>' + '$2');
-                        }
-                    }
-                    $this.html(num);
-                }
-            });
-        });
-    });
 
     //========================================================
     // Subscribe Form
