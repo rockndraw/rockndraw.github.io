@@ -486,7 +486,9 @@
 }
 /************************ Service Section *******************************/
 .serviceArea{
-    background: url(../images/home1/serviceBg.jpg) no-repeat scroll center center / cover;
+    background: url(../images/home/serviceBg.jpg) no-repeat scroll center center / cover;
+    padding: 45px 0;
+    text-align: center;
 }
 .serviceArea:after {
     content: "";
@@ -520,11 +522,11 @@
     width: 100%;
 }
 .singleService.first{
-    padding-top: 120px;
+    padding-top: 33px;
 }
 .serviceContent{
-    margin-bottom: 63px;
-    padding-top: 15px;
+    margin-bottom: 33px;
+    padding-top: 10px;
     width: 260px;
 }
 .serviceContent h4 {
@@ -532,6 +534,7 @@
 }
 .serviceContent h4 a{
     font-size: 30px;
+    line-height: 30px;
     color: #fff;
     -webkit-transition: all 700ms ease-in-out;
     -moz-transition: all 700ms ease-in-out;
@@ -576,6 +579,24 @@
 }
 .serviceIcon:hover i{
     color: #404040;
+}
+
+.serviceImg {
+   margin-top: 40px;
+}
+
+.CallToActionBtn {
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+}
+
+.CallToActionBtn:hover {
+    color: #de3c2f;
+    border-color: #de3c2f;
+    background: #fff;
 }
 /************************ Portfolio Section *******************************/
 .portfolioArea{
