@@ -213,29 +213,7 @@
     .singleFacts h1 {
         font-size: 65px;
     }
-    /**************** Skill Area ***************/
-    .skillArea.commonSection{
-        padding-bottom: 88px;
-    }
-    .singleSkill {
-        margin-bottom: 30px;
-    }
-    /**************** Blog ***************/
-    .blogArea:after {
-        left: 5px;
-    }
-    .postThumb.first {
-        height: auto;
-    }
-    .postThumb.first img {
-        height: auto;
-    }
-    .postThumb {
-        height: 175px;
-    }
-    .postThumb img {
-        height: 100%;
-    }
+
     /**************** Hompage Three ***************/
     .portfolioDetails {
         padding: 40px 0 40px;
@@ -1032,18 +1010,7 @@
         right: 10px!important; 
         top: 9px!important; 
     }
-    /**************** Skill Area ***************/
-    .skillArea.commonSection{
-        padding-bottom: 48px !important;
-    }
-    .singleFacts {
-        float: none;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .singleSkill {
-        margin-bottom: 30px;
-    }
+
     /**************** Blog Area ***************/
     .postThumb.first img {
         height: auto;
