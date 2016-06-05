@@ -1,12 +1,3 @@
-/*
-  Theme Name: TopBiz - Responsive Corporate HTML5 Template
-  Theme URL: http://themewar.com/html/topland
-  Author: ThemeWar
-  Author URI: http://www.themewar.com
-  Description: Responsive Corporate HTML5 Template
-  Version: 1.0
-*/
-
 /*=======================================================================
 [Table of contents]
 =========================================================================
@@ -80,8 +71,10 @@
     width: 164px;
 }
 
-.topPhone h2{
+.topPhone .topPhone__link{
     color: #de3c2f;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .mainMenu{
@@ -395,6 +388,12 @@
     right: 0;
     left: auto;
 }
+.sliderImg.one{
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right:30px;
+}
 .sliderImg.two{
     width: 635px;
 }
@@ -667,6 +666,7 @@
 
 .stagesItem {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .stagesItem h3{
@@ -736,6 +736,7 @@
 .pricingItem {
     padding: 0 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .pricingItem h3 {
@@ -2999,43 +3000,6 @@ outline: 0;
     padding-left: 35px;
 }
 
-.patterns {
-    width: 100%;
-    background: transparent;
-    position: absolute;
-    top: 455px;
-    left: 0;
-    padding-left: 50px;
-}
-.patterns a {
-    background: #404040 none repeat scroll 0 0;
-    border-radius: 50%;
-    float: left;
-    height: 30px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    position: relative;
-    width: 30px;
-}
-.patterns a:last-child {
-    margin-right: 0;
-}
-
-.patterns a.bg1 {
-    background: url("../images/preset/box/1.png") repeat scroll center center #fff;
-}
-.patterns a.bg2 {
-    background: url("../images/preset/box/2.png") repeat scroll center center #fff;
-}
-.patterns a.bg3 {
-    background: url("../images/preset/box/3.png") repeat scroll center center #fff;
-}
-.patterns a.bg4 {
-    background: url("../images/preset/box/4.png") repeat scroll center center #fff;
-}
-.patterns a.bg5 {
-    background: url("../images/preset/box/5.png") repeat scroll center center #fff;
-}
 /************** Loader Css ********/
 .loaderWrap{
     width: 100%;
@@ -3117,3 +3081,5 @@ outline: 0;
         transform: translateY(-100px) rotate(45deg) scale(0);
     }
 }
+
+
