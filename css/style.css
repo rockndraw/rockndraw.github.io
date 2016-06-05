@@ -266,6 +266,7 @@
 }
 
 /************************ Slider Section *******************************/
+
 .sliderArea{
     position: relative;
 }
@@ -432,79 +433,12 @@
     opacity: 0 !important;
     visibility: hidden;
 }
-/************************ Testimonial Section *******************************/
-.testiArea{
-    position: relative;
-}
-.testiArea:after{
-    content: "";
-    background: url(../images/rectangle/testi.png) no-repeat scroll center center;
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: auto;
-    bottom: -40px;
-    z-index: 1;
-}
-.singleTesti h2{
-    font-size: 50px;
-}
-.singleTesti span{
-    font-weight: 300;
-    display: inline-block;
-}
-.testiImg{
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 15px;
-    margin-top: -18px;
-    width: 80px;
-}
-.quote{
-    position: relative;
-}
-.quotation{
-    font-size: 20px;
-    font-style: italic;
-    padding: 30px 50px 0;
-    position: relative;
-}
-.quotation:before{
-    content: open-quote;
-    font-family: 'Coustard', serif;
-    font-size: 80px;
-    color: #404040;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    font-style: normal;
-}
-.quotation:after{
-    content: close-quote;
-    font-family: 'Coustard', serif;
-    font-size: 80px;
-    color: #404040;
-    position: absolute;
-    right: -10px;
-    top: 0;
-    font-style: normal;
-}
-.name{
-    color: #404040;
-    font-size: 20px;
-    line-height: 1;
-    padding-top: 22px;
-}
-.name span{
-    font-weight: 700;
-}
+
 /************************ Feature Section *******************************/
 .featureArea{
     background: url(../images/diagonal.png) repeat scroll center center;
     position: relative;
+    padding: 45px 0;
 }
 .featureArea:after {
     content: "";
