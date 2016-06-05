@@ -46,26 +46,6 @@
         });
     }
     //=======================================================
-    // Contact Map
-    //=======================================================
-    if ($("#map").length > 0)
-    {
-        var map;
-        map = new GMaps({
-            el: '#map',
-            lat: 51.5224303,
-            lng: -0.15554,
-            scrollwheel: false,
-            zoom: 18,
-            zoomControl: false,
-            panControl: false,
-            streetViewControl: false,
-            mapTypeControl: false,
-            overviewMapControl: false,
-            clickable: false
-        });
-    }
-    //=======================================================
     // Home Slider
     //=======================================================
     if ($(".sliderArea").length > 0)
