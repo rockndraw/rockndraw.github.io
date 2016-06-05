@@ -1,11 +1,3 @@
-/*
- Theme Name: TopBiz - Responsive Corporate HTML5 Template
- Theme URL: http://themewar.com/html/topland
- Author: ThemeWar
- Author URI: http://www.themewar.com
- Description: Responsive Corporate HTML5 Template
- Version: 1.0
- */
 (function ($) {
     'use strict';
     //========================
@@ -114,25 +106,6 @@
                 $(".presetArea").animate({'left': '-290px'}, 400);
                 switchs = true;
             }
-        });
-
-        $(".patterns a").on('click', function (e) {
-            e.preventDefault();
-            var bg = $(this).attr('href');
-
-            if ($("#boxLayout").hasClass('active'))
-            {
-                //alert(bg);
-                $('.patterns a').removeClass('active');
-                $(this).addClass('active');
-                $('body').removeClass('bgOne bgTwo bgThree bgFour bgFive');
-                $('body').addClass(bg);
-            }
-            else
-            {
-                alert('Please, active box layout First.');
-            }
-
         });
 
         $(".layouta").on('click', function (e) {

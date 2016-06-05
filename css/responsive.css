@@ -52,9 +52,9 @@
         height: 100% !important;
     }
     .sliderArea .tp-caption.lightgrey_divider.lft.resFix{
-        left: auto !important;
-        right: 0px !important;
-        top: 68px !important;
+        left: auto;
+        right: 0;
+        top: 68px;
     }
 }
 @media (min-width:1440px) and (max-width:2565px){
@@ -83,9 +83,9 @@
         height: 100% !important;
     }
     .sliderArea .tp-caption.lightgrey_divider.lft.resFix{
-        left: auto !important;
-        right: 0px !important;
-        top: 68px !important;
+        left: auto ;
+        right: 0 ;
+        top: 68px ;
     }
 
 }
@@ -118,8 +118,9 @@
         width: 50%;
     }
     .logo {
-        padding-left: 90px;
-        width: 25%;
+        padding-left: 30px;
+        width: 20%;
+        box-sizing:border-box;
     }
     .topSocial {
         padding-right: 90px;
@@ -137,17 +138,17 @@
         top: 190px !important;
     }
     .sliderArea .tp-caption.lightgrey_divider.lft.resFix{
-        left: auto !important;
-        right: -35px !important;
-        top: 158px !important;
+        left: auto ;
+        right: -35px ;
+        top: 158px ;
     }
     .sliderArea .tp-caption.lightgrey_divider.lfr{
-        left: 40px !important;
-        top: 245px !important;
+        left: 40px ;
+        top: 245px ;
     }
     .sliderArea .tp-caption.lightgrey_divider.lfl{
-        left: 40px !important;
-        top: 350px !important;
+        left: 40px ;
+        top: 350px ;
     }
     .sliderArea .tp-caption.lightgrey_divider.lfb{
         left: 40px !important;
@@ -536,7 +537,7 @@
         margin-bottom: 85px !important;
     }
     .viewBtn {
-        left: 0px;
+        left: 0;
         margin-bottom: -143px;
         position: relative;
         top: -143px;
@@ -848,21 +849,23 @@
     .sliderArea .tp-caption.lightgrey_divider.lfr{
         top:120px !important; 
     }
-    .headCaption {
+    .headCaption h2{
         font-size: 35px;
-    }
-    .sliderArea .tp-caption.lightgrey_divider.lfl{
-        top: 200px !important;
+        padding: 0;
     }
     .capItalic {
         line-height: 1.1;
         padding: 0 25px;
     }
     .sliderArea .tp-caption.lightgrey_divider.lfb{
-        top: 300px !important;
+        top: 360px !important;
     }
+    .sliderArea .tp-caption.lightgrey_divider.lfb.lfb2{
+        top: 430px !important;
+    }
+
     .sliderArea{
-        height: 480px !important;
+        height: 550px !important;
     }
     /**************** Testimonial ***************/
     .commonSection {
@@ -1378,3 +1381,29 @@
         width: 450px;
     }
 }
+
+@media (max-width: 991px){
+    .topPhone{
+        text-align: center;
+        margin:20px 0;
+    }
+    .headerFix .topPhone{
+       margin-top: -65px;
+    }
+}
+
+@media (max-width: 425px){
+    .headerFix .topPhone{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .logoImg img{
+        width: 86%;
+    }
+    .tp-caption.lightgrey_divider.lfl{
+        top: 250px !important;
+    }
+}
+
