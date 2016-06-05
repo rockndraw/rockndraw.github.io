@@ -551,7 +551,8 @@
 .serviceContent p{
     color: #bfbfbf;
 }
-.serviceIcon{
+.serviceIcon, .stagesIcon{
+    color: #fff;
     background: #de3c2f none repeat scroll 0 0;
     border-radius: 50%;
     height: 80px;
@@ -564,8 +565,9 @@
     -o-transition: all 700ms ease-in-out;
     transition: all 700ms ease-in-out;
 }
-.serviceIcon:hover{
+.serviceIcon:hover, .stagesIcon:hover{
     background: #fff;
+    color: #404040;
 }
 .serviceIcon i{
     display: inline-block;
@@ -642,73 +644,64 @@
     padding-bottom: 10px;
 }
 
-.blogCotent{
+/************************ Stages Section *******************************/
+
+.stagesArea {
     position: relative;
-    display: table;
-    clear: both;
+    background: url(../images/home/serviceBg.jpg) no-repeat scroll center center / cover;
+    padding: 65px 0;
 }
-.postThumb{
-    position: relative;
-}
-.postDate{
-    background: #de3c2f none repeat scroll 0 0;
-    height: 175px;
+.stagesArea:after{
+    content: "";
+    background: url(../images/rectangle/service.png) no-repeat scroll center center;
+    width: 80px;
+    height: 40px;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     top: auto;
-    width: 150px;
-    bottom: 0;
+    bottom: -40px;
+    z-index: 1;
 }
-.postThumb.first .postDate{
-    bottom: 1px;
+
+.stagesItem {
+    text-align: center;
 }
-.postThumb.right{
-    height: 175px;
-}
-.postThumb.right .postDate{
-    height: 100%;
-}
-.blogCotent.last{
-    margin-top: 30px;
-}
-.postDate h1{
-    font-size: 80px;
+
+.stagesItem h3{
     color: #fff;
-    padding: 23px 0 9px;
-}
-.postDate p{
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fff;
-}
-.postDate a{
-    background: #404040 none repeat scroll 0 0;
-    color: #fff;
-    display: block;
-    font-size: 13px;
     font-weight: 400;
-    padding: 8px 0;
-    position: relative;
-    text-transform: uppercase;
-    top: 18px;
+    font-size: 24px;
+    line-height: 22px;
+    margin: 10px 0;
 }
-.postDate a:hover{
-    color: #de3c2f;
+
+.stagesItem p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
 }
-.postContent {
-    background: #fff;
-    padding: 0 37px 45px;
+
+.stagesIcon {
+    margin: 0 auto;
 }
-.postContent h3 a{
-    color: #404040;
-    display: inline-block;
-    font-size: 30px;
-    padding: 37px 0 22px;
+
+
+.stagesIcon h3 {
+    color: inherit;
+    font-size: 38px;
 }
-.postContent h3 a:hover{
-    color: #de3c2f;
+
+.stagesTitle h2{
+    font-size: 37px;
+    margin-bottom: 45px;
+    color: #fff;
 }
-.postThumb.first img{
-    height: 560px;
+
+.stagesTitle h2 span{
+    font-weight: 400;
 }
 
 /************************ Footer Section *******************************/
