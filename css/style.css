@@ -598,236 +598,16 @@
     border-color: #de3c2f;
     background: #fff;
 }
-/************************ Portfolio Section *******************************/
-.portfolioArea{
-    background: rgba(0, 0, 0, 0) url("../images/diagonal.png") repeat scroll center center;
-}
-.commonTittle.folio{
-    padding-bottom: 23px;
-}
-.portfolioArea.commonSection{
-    padding-bottom: 24px;
-}
-.folioSubTittle{
-    background: #de3c2f none repeat scroll 0 0;
-    color: #fff;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 5px 65px 4px;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-}
-.singlePortfolio {
-    position: relative;
-    text-align: center;
-}
-.portfolioImg{
-    width: 200px;
-    text-align: center;
-    overflow: hidden;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    height: 200px;
-    position: relative;
-    display: inline-block;
-}
-.portfolioImg img{
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 284px;
-    height: 284px;
-    margin: -41px 0 0 -41px;
-    filter: blur(0);
-    -webkit-filter: blur(0);
-}
-.portfolioImg.folioImgFix_1 {
-    left: -120px;
-    position: relative;
-}
-.portfolioImg.folioImgFix_2 {
-    left: -39px;
-    position: relative;
-}
-.portfolioImg.folioImgFix_3 {
-    position: relative;
-    left: 42px;
-}
-.portfolioImg.folioImgFix_4 {
-    position: relative;
-    left: 124px;
-}
-.portfolioImg.folioImgFix_5 {
-    left: -80px;
-    position: relative;
-    top: -57px;
-}
-.portfolioImg.folioImgFix_6 {
-    left: 1px;
-    position: relative;
-    top: -59px;
-}
-.portfolioImg.folioImgFix_7 {
-    left: 83px;
-    position: relative;
-    top: -58px;
-}
-.portfolioImg.folioImgFix_9 {
-    left: 43px;
-    position: relative;
-    top: -117px;
-}
-.portfolioImg.folioImgFix_8 {
-    left: -38px;
-    position: relative;
-    top: -116px;
-}
-.folioHover {
-    width: 284px;
-    height: 284px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    background: rgba(64,64,64,.85);
-    -webkit-transform: rotate(-45deg) scale(0);
-    -moz-transform: rotate(-45deg) scale(0);
-    -ms-transform: rotate(-45deg) scale(0);
-    -o-transform: rotate(-45deg) scale(0);
-    transform: rotate(-45deg) scale(0);
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -ms-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
-    margin: -41px 0 0 -41px;
-}
-.folioHover a.prePhoto{
-    background: #de3c2f none repeat scroll 0 0;
-    border-radius: 50%;
-    bottom: 0;
-    color: #fff;
-    font-size: 20px;
-    height: 40px;
-    left: -50px;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40px;
-}
-.folioHover a.prePhoto:hover{
-    color: #404040;
-}
-.folioHover a.detailsLink{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #404040;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: -50px;
-    bottom: 0;
-    margin: auto;
-}
-.folioHover a.detailsLink:hover{
-    color: #de3c2f;
-}
-.folioHover a i{
-    position: relative;
-    top: 10px;
-}
-.portfolioImg .folioHover{
-    opacity: 0;
-    visibility: hidden;
-}
-.portfolioImg:hover .folioHover{
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: rotate(-45deg) scale(1);
-    -moz-transform: rotate(-45deg) scale(1);
-    -ms-transform: rotate(-45deg) scale(1);
-    -o-transform: rotate(-45deg) scale(1);
-    transform: rotate(-45deg) scale(1);
-    filter: blur(0);
-    -webkit-filter: blur(0);
-}
-div.pp_default .pp_close{
-    color: #de3c2f;
-    height: inherit;
-    padding-right: 10px;
-    padding-top: 6px;
-    text-align: right;
-    text-indent: 0;
-    width: inherit;
-    opacity: 1 !important;
-    line-height: 1 !important;
-    display: block;
-}
-.mixurBtn{
-    position: relative;
-}
-.viewBtn {
-    background: #de3c2f none repeat scroll 0 0;
-    display: table;
-    height: 200px;
-    left: 4px;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: -174px;
-    width: 200px;
-    z-index: 1;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transition: all 700ms ease;
-    -moz-transition: all 700ms ease;
-    -ms-transition: all 700ms ease;
-    -o-transition: all 700ms ease;
-    transition: all 700ms ease;
-}
-.viewBtn:hover {
-    background: #404040;
-}
-.viewBtn a{
-    display: table-cell;
-    text-align: center;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #fff;
-    vertical-align: middle;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-#mixer .mix{
-    display: none;
-}
 
-/************************ Blog Section *******************************/
-.blogArea {
-    background: rgba(0, 0, 0, 0) url("../images/diagonal.png") repeat scroll center center;
+
+/************************ Specialists Section *******************************/
+.specialistsArea {
     position: relative;
+    padding: 65px 0 40px 0;
 }
-.blogArea:after{
+.specialistsArea:after{
     content: "";
-    background: url(../images/rectangle/blog.png) no-repeat scroll center center;
+    background: url(../images/rectangle/specialists.png) no-repeat scroll center center;
     width: 80px;
     height: 40px;
     position: absolute;
@@ -838,6 +618,30 @@ div.pp_default .pp_close{
     bottom: -40px;
     z-index: 1;
 }
+
+.specialistsTitle h2{
+    font-size: 37px;
+    margin-bottom: 45px;
+}
+
+.specialistsTitle h2 span{
+    font-weight: 400;
+}
+
+.specialistImg {
+    padding-top: 100px;
+}
+
+.singleSpecialist{
+    margin-bottom: 30px;
+}
+.singleSpecialist h2{
+    font-size: 30px;
+    color: #de3c2f;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
 .blogCotent{
     position: relative;
     display: table;
@@ -906,70 +710,7 @@ div.pp_default .pp_close{
 .postThumb.first img{
     height: 560px;
 }
-/************************ Subscribe Section *******************************/
-.subscribeArea{
-    padding: 120px 0;
-    background: #fff;
-    position: relative;
-}
-.subscribeArea:after{
-    content: "";
-    background: url(../images/rectangle/testi.png) no-repeat scroll center center;
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: auto;
-    bottom: -40px;
-    z-index: 1;
-}
-.subsForm h4 {
-    font-size: 20px;
-    padding-bottom: 30px;
-}
-.subsForm h4 span{
-    font-weight: 300;
-}
-.subsForm form{
-    margin: 0 auto;
-    position: relative;
-    width: 370px;
-}
-.subsForm form input.errorInput{
-    border-color: #de3c2f;
-}
-.subsForm form input{
-    width: 330px;
-    height: 40px;
-    border: 1px solid #e5e5e5;
-    padding-left: 10px;
-}
-.subsForm form button {
-    background: #de3c2f none repeat scroll 0 0;
-    border: medium none;
-    height: 40px;
-    left: auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 40px;
-}
-.subsForm form button i {
-    color: #fff;
-    display: inline-block;
-    font-size: 20px;
-    -webkit-transition: all 700ms ease-in-out;
-    -moz-transition: all 700ms ease-in-out;
-    -ms-transition: all 700ms ease-in-out;
-    -o-transition: all 700ms ease-in-out;
-    transition: all 700ms ease-in-out;
-}
-.subsForm form button:hover i{
-    color: #404040;
-}
+
 /************************ Footer Section *******************************/
 .footerArea{
     position: relative;
