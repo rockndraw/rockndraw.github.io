@@ -691,7 +691,8 @@
 
 .stagesIcon h3 {
     color: inherit;
-    font-size: 38px;
+    font-size: 35px;
+    margin-top: 6px;
 }
 
 .stagesTitle h2{
@@ -849,47 +850,79 @@
 /************************ Footer Section *******************************/
 .footerArea{
     position: relative;
+    padding: 0;
 }
 .footerTop{
-    background: url(../images/home1/footerBg.jpg) no-repeat scroll center center / cover;
+    background: url(../images/home/serviceBg.jpg) no-repeat scroll center center / cover;
     position: relative;
+    padding: 65px 0 45px 0;
 }
 .footerTop:after{
     content: "";
-    background: url(../images/logoBig.png) no-repeat scroll center center;
-    width: 80px;
-    height: 60px;
+    background: url(../images/logo.png);
+    background-size: cover;
+    width: 200px;
+    height: 70px;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
     top: auto;
-    bottom: -40px;
+    bottom: -100px;
     z-index: 1;
 }
-.footerContent h2{
+.footerArea h2{
     color: #fff;
-    font-size: 50px;
-    padding-bottom: 30px;
-}
-.footerContent a{
-    color: #de3c2f;
-    font-size: 100px;
-    font-weight: 300;
-    padding-bottom: 34px;
-    text-transform: uppercase;
-    line-height: 0.8;
-}
-.footerContent a:hover{
-    color: #fff;
-}
-.footerContent p{
     font-size: 30px;
-    line-height: .9;
+}
+
+.footerArea h3{
+    padding: 30px 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.footerArea h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footerContent {
+    text-align: center;
     color: #fff;
 }
+
+.footerContent ul{
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+
+}
+
+.footerContent li a{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.footerContent a{
+    color: #fff;
+}
+
+.footerContent a:hover{
+    color: #de3c2f;
+}
+
+.footerSocial {
+    padding: 20px;
+    word-spacing: 15px;
+    color: #fff;
+}
+
+
 .copyRight{
-    padding: 80px 0;
+    padding: 120px 0 50px 0;
     background: #fff;
 }
 .copyRight p{
