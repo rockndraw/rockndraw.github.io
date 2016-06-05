@@ -704,6 +704,148 @@
     font-weight: 400;
 }
 
+/************************ Pricing Section *******************************/
+.pricingTitle h2{
+    font-size: 37px;
+    margin-bottom: 45px;
+}
+
+.pricingTitle h2 span{
+    font-weight: 400;
+}
+
+.pricingArea{
+    background: url(../images/diagonal.png) repeat scroll center center;
+    position: relative;
+    padding: 60px 0;
+}
+.pricingArea:after {
+    content: "";
+    background: url(../images/rectangle/feature.png) no-repeat scroll center center;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: auto;
+    bottom: -40px;
+    z-index: 1;
+}
+.pricingItem {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.pricingItem h3 {
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.pricingItem h4 {
+    font-size: 32px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.pricingItem h4 i {
+    font-size: 21px;
+}
+
+.pricingItem h4 span {
+    font-size: 21px;
+}
+
+.pricingTable {
+    background: #fff;
+    min-height: 100px;
+    border: 1px solid #de3c2f;
+}
+
+.pricingTable ul {
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.pricingTable li {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pricingPanel {
+    padding: 15px;
+    color: #fff;
+    background: #de3c2f;
+    text-align: center;
+}
+
+.pricingIcon {
+    padding-top: 15px;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.pricingButtons {
+    text-align: center;
+}
+
+.pricingBtn{
+    border: 2px solid #de3c2f;
+    clear: both;
+    height: 60px;
+    margin: 43px 10px 0 10px;
+    width: 207px;
+    text-align: center;
+    background: transparent;
+    color: #de3c2f;
+    background: #fff
+}
+.pricingBtn i{
+    background: #de3c2f;
+    color: #fff;
+    float: left;
+    font-size: 24px;
+    height: 60px;
+    margin-left: -2px;
+    margin-top: -2px;
+    padding-top: 16px;
+    text-align: center;
+    width: 60px;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+    border: 2px solid #de3c2f;
+}
+.pricingBtn span{
+    background: transparent;
+    color: #de3c2f;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 21px;
+    text-transform: uppercase;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+.pricingBtn:hover i{
+    background: #fff;
+    color: #de3c2f;
+}
+.pricingBtn:hover{
+    background: #de3c2f;
+}
+.pricingBtn:hover span{
+    color: #fff;
+}
+
 /************************ Footer Section *******************************/
 .footerArea{
     position: relative;
