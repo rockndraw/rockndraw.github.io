@@ -154,6 +154,43 @@
     position: relative;
     padding: 0 30px;
 }
+
+.bigMenu {
+    width: 950px;
+    left: -260px;
+    padding: 20px;
+}
+
+.bigMenu > li{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+.bigMenuItem > li{
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 5px 0px;
+}
+
+.bigMenuItem > li a{
+    color: #fff;
+}
+
+.bigMenuItem > li:first-child a{
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 0px;
+}
+
+.bigMenuItem > li a:hover{
+    color: #de3c2f;
+}
+
 .dropMenu > li > a{
     font-size: 13px;
     font-weight: 400;
