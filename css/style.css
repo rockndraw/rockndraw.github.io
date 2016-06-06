@@ -485,6 +485,10 @@
     font-weight: 400;
 }
 /************************ Service Section *******************************/
+.contentCenter {
+    text-align: center;
+}
+
 .serviceArea{
     background: url(../images/home/serviceBg.jpg) no-repeat scroll center center / cover;
     padding: 45px 0;
@@ -521,6 +525,7 @@
     clear: both;
     width: 100%;
 }
+
 .singleService.first{
     padding-top: 33px;
 }
@@ -532,7 +537,7 @@
 .serviceContent h4 {
     padding-bottom: 12px;
 }
-.serviceContent h4 a{
+.serviceContent h4 {
     font-size: 30px;
     line-height: 30px;
     color: #fff;
@@ -542,10 +547,12 @@
     -o-transition: all 700ms ease-in-out;
     transition: all 700ms ease-in-out;
 }
-.serviceContent h4 a:hover{
-    color: #de3c2f;
+
+.singleServiceLight .serviceContent h4 {
+    color: #40403f;
 }
-.serviceContent h4 a span{
+
+.serviceContent h4 span{
     font-weight: 300;
 }
 .serviceContent p{
@@ -565,10 +572,7 @@
     -o-transition: all 700ms ease-in-out;
     transition: all 700ms ease-in-out;
 }
-.serviceIcon:hover, .stagesIcon:hover{
-    background: #fff;
-    color: #404040;
-}
+
 .serviceIcon i{
     display: inline-block;
     font-size: 32px;
@@ -578,9 +582,6 @@
     -ms-transition: all 700ms ease-in-out;
     -o-transition: all 700ms ease-in-out;
     transition: all 700ms ease-in-out;
-}
-.serviceIcon:hover i{
-    color: #404040;
 }
 
 .serviceImg {
@@ -601,13 +602,24 @@
     background: #fff;
 }
 
+.CallToActionBtnLight {
+    color: #de3c2f;
+    border-color: #de3c2f
+}
+
+.CallToActionBtnLight:hover {
+    color: #fff;
+    border-color: #de3c2f;
+    background: #de3c2f;
+}
+
 
 /************************ Specialists Section *******************************/
-.specialistsArea {
+.specialistsArea, .ServiceContentArea {
     position: relative;
     padding: 65px 0 40px 0;
 }
-.specialistsArea:after{
+.specialistsArea:after, .ServiceContentArea:after{
     content: "";
     background: url(../images/rectangle/specialists.png) no-repeat scroll center center;
     width: 80px;
@@ -1266,7 +1278,7 @@
 /************************ Breadcrumb Section *******************************/
 .breadCrumArea{
     position: relative;
-    background: url(../images/folio1/breadBg.jpg) no-repeat scroll center center / cover;
+    background: url(../images/breadBg.jpg) no-repeat scroll center center / cover;
     padding: 175px 0 60px;
 }
 .breadCrumArea:after {
@@ -1283,9 +1295,8 @@
     z-index: 1;
 }
 .breadCrumArea h1{
-    font-size: 80px;
+    font-size: 60px;
     color: #404040;
-    text-transform: capitalize;
 }
 .breadCrumArea h1 span{
     font-weight: 300;
@@ -1299,11 +1310,10 @@
     font-weight: 300;
     font-style: italic;
     color: #fff;
-    text-transform: capitalize;
 }
 .breadLink li span{
     display: inline-block;
-    padding: 0 24px;
+    padding: 0 5px;
     font-size: 16px;
 }
 .breadLink li a{
@@ -2013,15 +2023,24 @@
 }
 .featuresList{
     display: block;
-    padding-top: 32px;
+    text-align: left;
 }
+
+.featuresList a{
+    color: inherit;
+}
+
+.featuresList a:hover{
+    color: #de3c2f;
+}
+
 .featuresList li{
     border-bottom: 1px solid #f2f2f2;
     color: #404040;
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
-    padding: 10px 0 12px;
+    padding: 8px 0 8px;
 }
 .featuresList li:before{
     content: "\f105";
@@ -2031,6 +2050,75 @@
     color: #de3c2f;
     display: inline-block;
 }
+
+.servicesList{
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.servicesList a{
+    color: inherit;
+}
+
+.servicesList a:hover{
+    color: #de3c2f;
+}
+
+.servicesList li{
+    color: #fff;
+    display: block;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 13px 0 8px;
+}
+.servicesList li:before{
+    content: "\f105";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    padding-right: 15px;
+    color: #de3c2f;
+    display: inline-block;
+}
+
+.serviceSingleImg {
+    width: 350px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    float: left;
+}
+
+.serviceSingleContent{
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+.serviceSingleContent h2{
+    font-size: 30px;
+    line-height: 32px;
+    color: #de3c2f;
+    font-weight: 300;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.serviceSingleContent p{
+    padding: 15px 0;
+    margin: 0;
+    color: #404040;
+}
+
+.serviceSingleContent ul{
+    padding-left: 45px;
+    list-style-type: circle;
+}
+
+.serviceSingleContent li{
+    color: #404040;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
 .myAccordion .panel.panel-default{
     border-radius: 0;
     box-shadow: none;
