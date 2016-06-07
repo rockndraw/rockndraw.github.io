@@ -7,10 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Include All CSS -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/sections.css"/>
+        <link rel="stylesheet" type="text/css" href="css/modules.css"/>
+        <link rel="stylesheet" type="text/css" href="css/elements.css"/>
+
         <link rel="stylesheet" type="text/css" href="css/settings.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/preset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
         <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
@@ -132,19 +136,21 @@
                 </div>
             </section>
 
-            <!-- Service Content Section -->
-            <section class="ServiceContentArea">
+            <!-- Service Top Content Section -->
+
+            <section class="whiteArea">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-xs-12">
-                            <div class="serviceSingleImg">
+                            <div class="col-lg-4 col-sm-12 col-xs-12 topContentImg text-center">
                                 <img src="images/services/computer-service.png" alt="" />
                             </div>
-                            <div class="serviceSingleContent text-left">
+                            <div class="col-lg-8 col-sm-12 col-xs-12 topContent text-left">
                                 <h2>Сломался компьютер? Не знаете что делать?</h2>
                                 <p>Ваш компьютер не включается? Самопроизвольно выключается? Не грузится операционная система? Эти и множество других проблем могут возникнуть в самый неподходящий момент даже с самой дорогостоящей техникой.</p>
-                                <h2>Мастер Едет - центр проверенных решений!</h2>
                                 <p>Компьютер, как сложная и многогранная система, не терпит дилетантства в обращении. Самостоятельный ремонт может привести к непоправимым последствиям. В лучшем случае, - усугубить ситуацию. "Мастер Едет" осуществляет срочную компьютерную помощь СПб на дому и в офисах оперативно и с гарантией качества.</p>
+                                <h2>Центр проверенных решений!</h2>
+                                <p>«Мастер Едет» осуществляет срочную компьютерную помощь СПб на дому и в офисах оперативно и с гарантией качества. «Мастер Едет» — это профессиональная компьютерная помощь по доступным ценам! Позвоните прямо сейчас и оформите бесплатный вызов мастера на дом или в офис.</p>
                             </div>
                         </div>
                     </div>
@@ -153,25 +159,28 @@
                     </div>
                 </div>
             </section>
-            <section class="serviceArea commonSection">
+
+            <!-- Catalog Section -->
+
+            <section class="pictureArea">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-sm-4 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-                                <ul class="servicesList">
+                                <ul class="serviceListLarge">
                                     <li><a href="os-setup.html">Установка и переустановка ОС</a></li>
                                     <li><a href="#">Установка офисных программ</a></li>
                                 </ul>
                         </div>
                         <div class="col-lg-4 col-sm-4 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-                                <ul class="servicesList">
+                                <ul class="serviceListLarge">
                                     <li><a href="#">Настройка компьютера</a></li>
                                     <li><a href="#">Установка ПО</a></li>
                                     <li><a href="#">Работа с данными</a></li>
                                 </ul>
                         </div>
                         <div class="col-lg-4 col-sm-4 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-                                <ul class="servicesList">
+                                <ul class="serviceListLarge">
                                     <li><a href="#">Сборка и модернизация ПК</a></li>
                                     <li><a href="#">Обслуживание компьютера</a></li>
                                 </ul>
@@ -179,49 +188,48 @@
                     </div>
                 </div>
             </section>
-            <!-- Feature Section -->
-            <section class="featureArea commonSection">
+
+            <!-- Call to Action Section -->
+
+            <section class="diagonalArea">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-                            <div class="singleService singleServiceLight first">
-                                <div class="serviceContent pull-left text-right">
+                            <div class="callSingle first callSingleLight">
+                                <div class="callContent pull-left text-right">
                                     <h4>Бесплатный<br><span>выезд мастера</span></h4>
                                 </div>
-                                <div class="serviceIcon pull-right">
+                                <div class="callIcon pull-right">
                                     <i class="fa fa-user"></i>
                                 </div>
                             </div>
-                            <div class="singleService singleServiceLight">
-                                <div class="serviceContent pull-left text-right">
+                            <div class="callSingle callSingleLight">
+                                <div class="callContent pull-left text-right">
                                     <h4>Антивирус<br><span>в подарок</span></h4>
                                 </div>
-                                <div class="serviceIcon pull-right">
+                                <div class="callIcon pull-right">
                                     <i class="fa fa-shield"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp contentCenter" data-wow-duration="700ms" data-wow-delay="350ms">
-                        
-                            <div class="serviceImg">
-                                <img src="images/logo.png" alt="">
-                            </div>
-                            <a href="#" class="CallToActionBtn CallToActionBtnLight">Вызвать мастера</a>
+                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp text-center callButtons" data-wow-duration="700ms" data-wow-delay="350ms">
+                            <a href="#" class="callBtn callBtnLight">Вызвать мастера</a>
+                            <a href="#" class="callBtn callBtnLight">Заказать звонок</a>
                         </div>
                         <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
-                            <div class="singleService singleServiceLight first">
-                                <div class="serviceIcon pull-left">
+                            <div class="callSingle first callSingleLight">
+                                <div class="callIcon pull-left">
                                     <i class="fa fa-gear"></i>
                                 </div>
-                                <div class="serviceContent pull-right text-left">
+                                <div class="callContent pull-right text-left">
                                     <h4>Бесплатная<br><span>диагностика</span></h4>
                                 </div>
                             </div>
-                            <div class="singleService singleServiceLight right">
-                                <div class="serviceIcon pull-left">
+                            <div class="callSingle right callSingleLight">
+                                <div class="callIcon pull-left">
                                     <i class="fa fa-check"></i>
                                 </div>
-                                <div class="serviceContent pull-right text-left">
+                                <div class="callContent pull-right text-left">
                                     <h4>Гарантия<br><span>до двух лет</span></h4>
                                 </div>
                             </div>
@@ -231,11 +239,11 @@
             </section>
             <!-- Footer Section -->
             <footer class="footerArea">
-                <section class="footerTop commonSection">
+                <section class="footerTop">
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="footerContent">
+                            <div class="footerTopContent">
                                 <div class="col-lg-4 col-sm-4 col-xs-12">
                                     <h2>Популярные услуги</h2>
                                     <ul>
@@ -264,7 +272,7 @@
                                     <h2>Наши контакты</h2>
                                     <h3><a href="">+7 (812) 123-45-67</a></h3>
                                     <h4>Ежедневно c 9:00 до 21:00</h4>
-                                    <div class="footerSocial">
+                                    <div class="footerTopSocial">
                                         <a href=""><i class="fa fa-vk fa-2x"></i></a>
                                         <a href=""><i class="fa fa-youtube fa-2x"></i></a>
                                         <a href=""><i class="fa fa-facebook fa-2x"></i></a>
