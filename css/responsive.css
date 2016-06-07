@@ -54,6 +54,11 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
+
+.serviceList{
+    margin-left: 50px;
+}
+
     /**************** Header ***************/
     .mainMenu {
         width: 50%;
@@ -105,6 +110,18 @@
  }
 
 @media (min-width: 650px) and (max-width: 991px){
+	.breadCrumArea{
+    padding: 90px 0 30px;
+	}
+
+	.breadCrumArea h1{
+    	margin-top: -50px;
+	}
+
+	.serviceList{
+    margin-left: 50px;
+}
+
     /**************** Header ***************/
     .headerArea {
         height: inherit;
@@ -246,6 +263,41 @@
 }
 
 @media (min-width: 290px) and (max-width: 649px){
+
+	.serviceListLarge {
+		padding: 0px;
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	.serviceListLarge li {
+		font-size: 18px;
+	}
+
+	.topContent p{
+		text-align: left;
+	}
+
+	.breadCrumArea h1{
+    	font-size: 33px;
+    	line-height: 34px;
+	}
+
+	.serviceList{
+
+	min-height: 0px;
+    margin-left: 50px;
+    padding-bottom: 30px;
+	}
+
+	.breadCrumArea{
+    padding: 90px 0 30px;
+	}
+
+	.breadCrumArea h1{
+    	margin-top: -50px;
+	}
+
     /**************** Header ***************/
     .headerArea {
         height: inherit;
@@ -387,6 +439,18 @@
 }
 
 @media (min-width: 290px) and (max-width: 320px){
+
+	.serviceListLarge {
+		margin-left: 0px;
+	}
+
+	.serviceList{
+
+	min-height: 0px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+	}
+
     /**************** Slider ***************/
 
     .sliderArea .tp-caption.lightgrey_divider.lfl{

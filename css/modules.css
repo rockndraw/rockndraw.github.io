@@ -37,6 +37,7 @@
 .serviceList{
     display: block;
     text-align: left;
+    min-height: 300px;
 }
 .serviceList a{
     color: inherit;

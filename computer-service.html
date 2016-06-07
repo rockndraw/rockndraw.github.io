@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/preset.css"/>
         <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+        <link rel="stylesheet" type="text/css" href="css/adaptive.css"/>
         <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
         <!-- Favicon Icon -->
@@ -38,11 +39,6 @@
                     </div>
                 </div>
                 <nav class="mainMenu pull-left">
-                    <div class="menuButton hidden-lg hidden-md">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                     <ul>                                                                                 
                         <li><a href="index.html">Главная</a>
 
@@ -117,6 +113,9 @@
                 </nav>
                 <div class="topPhone">
                     <a href="tel:+7 (812) 123-45-67" class="topPhone__link">+7 (812) 123-45-67</a>
+                    <div class="menuButton hidden-lg hidden-md">
+                            <i class="fa fa-bars"></i>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </header>
@@ -194,7 +193,7 @@
             <section class="diagonalArea">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
                             <div class="callSingle first callSingleLight">
                                 <div class="callContent pull-left text-right">
                                     <h4>Бесплатный<br><span>выезд мастера</span></h4>
@@ -212,11 +211,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp text-center callButtons" data-wow-duration="700ms" data-wow-delay="350ms">
+                        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs wow fadeInUp text-center" data-wow-duration="700ms" data-wow-delay="350ms">
                             <a href="#" class="callBtn callBtnLight">Вызвать мастера</a>
                             <a href="#" class="callBtn callBtnLight">Заказать звонок</a>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
                             <div class="callSingle first callSingleLight">
                                 <div class="callIcon pull-left">
                                     <i class="fa fa-gear"></i>
@@ -234,8 +233,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">
+                            <a href="#" class="callBtn callBtnLight">Заказать звонок</a>
+                            <a href="#" class="callBtn callBtnLight">Вызвать мастера</a>
+                        </div>
                     </div>
-                </div>
             </section>
             <!-- Footer Section -->
             <footer class="footerArea">
@@ -244,7 +246,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="footerTopContent">
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <h2>Популярные услуги</h2>
                                     <ul>
                                         <li><a href="#">Установка Windows XP/7/8/10 на ПК</a></li>
@@ -256,7 +258,7 @@
                                         <li><a href="#">Срочный ремонт техники</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <h2>Полезные статьи</h2>
                                     <ul>
                                         <li><a href="#">Обновление до Windows 10</a></li>
@@ -268,7 +270,7 @@
                                         <li><a href="#">Настройка Wi-Fi роутера</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <h2>Наши контакты</h2>
                                     <h3><a href="">+7 (812) 123-45-67</a></h3>
                                     <h4>Ежедневно c 9:00 до 21:00</h4>
