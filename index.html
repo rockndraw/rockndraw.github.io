@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/preset.css"/>
         <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+        <link rel="stylesheet" type="text/css" href="css/adaptive.css"/>
         <link rel="stylesheet" type="text/css" href="css/animate.css"/>
 
         <!-- Favicon Icon -->
@@ -38,11 +39,6 @@
                     </div>
                 </div>
                 <nav class="mainMenu pull-left">
-                    <div class="menuButton hidden-lg hidden-md">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                     <ul>                                                                                 
                         <li class="active"><a href="index.html">Главная</a>
 
@@ -117,6 +113,9 @@
                 </nav>
                 <div class="topPhone">
                     <a href="tel:+78121234567" class="topPhone__link">+7 (812) 123-45-67</a>
+                    <div class="menuButton hidden-lg hidden-md">
+                            <i class="fa fa-bars"></i>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </header>
@@ -159,18 +158,11 @@
                                  data-start="1300"
                                  data-easing="Power4.easeOut">
                                 <a href="#" class="sliderBtn"><i class="fa fa-user"></i><span>Вызвать мастера</span></a>
-                            </div>
-                            <div class="tp-caption lightgrey_divider lfb lfb2 fadeout"
-                                 data-x="230"
-                                 data-y="440"
-                                 data-speed="1400"
-                                 data-start="1300"
-                                 data-easing="Power4.easeOut">
                                 <a href="#" class="sliderBtn"><i class="fa fa-phone"></i><span>Заказать звонок</span></a>
                             </div>
                             <div class="tp-caption lightgrey_divider lft resFix fadeout"
                                  data-x="right"
-                                 data-y="230"
+                                 data-y="380"
                                  data-speed="1400"
                                  data-start="1300"
                                  data-easing="easeOutBack">
@@ -288,7 +280,7 @@
             <section class="diagonalArea">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
                             <div class="serviceImg">
                                 <a href="computer-service.html"><img src="images/home/feature1.png" alt=""></a>
                             </div>
@@ -297,7 +289,7 @@
                                 <p>Установка и настройка ОС и программ, настройка сетей, обслуживание компьютера...</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="350ms">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="350ms">
                             <div class="serviceImg">
                                 <img src="images/home/feature2.png" alt="">
                             </div>
@@ -306,7 +298,7 @@
                                 <p>Очистка компьютера от вирусов, удаление вредоносных программ, троянов и баннеров...</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
                             <div class="serviceImg">
                                 <img src="images/home/feature3.png" alt="">
                             </div>
@@ -315,7 +307,7 @@
                                 <p>Видеонаблюдение, домофоны, пожарные и охранные сигнализации, ЛВС, СКС, ВОЛС...</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="450ms">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp" data-wow-duration="700ms" data-wow-delay="450ms">
                             <div class="serviceImg">
                                 <img src="images/home/feature4.png" alt="">
                             </div>
@@ -334,7 +326,7 @@
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
                             <div class="callSingle first">
                                 <div class="callContent pull-left text-right">
                                     <h4>Бесплатный<br><span>выезд мастера</span></h4>
@@ -352,14 +344,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp text-center" data-wow-duration="700ms" data-wow-delay="350ms">
+                        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs wow fadeInUp text-center" data-wow-duration="700ms" data-wow-delay="350ms">
                         
                             <div class="callImg">
                                 <img src="images/logo2.png" alt="">
                             </div>
                             <a href="#" class="callBtn">Вызвать мастера</a>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="400ms">
                             <div class="callSingle first">
                                 <div class="callIcon pull-left">
                                     <i class="fa fa-gear"></i>
@@ -377,6 +369,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="hidden-lg hidden-md col-sm-12 col-xs-12 wow fadeInUp text-center" data-wow-duration="700ms" data-wow-delay="350ms">
+                            <a href="#" class="callBtn">Заказать звонок</a>
+                            <a href="#" class="callBtn">Вызвать мастера</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -391,29 +387,27 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5 col-sm-5 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                             <div class="butterflySingle text-right">
-                                 <h2>Пунктуальность</h2>
+                                 <h3>Пунктуальность</h3>
                                  <p>Организация направит к вам мастера тогда, когда удобно вам, ожидание составит 1-1,5 часа с момента звонка. Тогда как для частного специалиста, ваш звонок может оказаться приятным сюрпризом и не всегда получится моментально среагировать на вызов.</p>
                             </div>
                             <div class="butterflySingle text-right">
-                                 <h2>Профессионализм</h2>
+                                 <h3>Профессионализм</h3>
                                  <p>Фирма по оказанию компьютерной помощи - это рабочий коллектив, в штате которого работники разных IT направлений, поэтому не существует такой проблемы, которая им не по плечу. Частный мастер может быть неплохим специалистом и с душой относиться к делу, но быть профессионалом во всем невозможно.</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-12 posRele">
-                            <div class="butterflyImg">
+                        <div class="col-lg-2 col-md-2 hidden-sm hidden-xs posRele butterflyImg">
                                 <img src="images/home/specialist.png" alt="" />
-                            </div>
                         </div>
-                        <div class="col-lg-5 col-sm-5 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                             <div class="butterflySingle text-left">
-                                <h2>Гарантия результата</h2>
+                                <h3>Гарантия результата</h3>
                                 <p>Приоритет организации – выполненный заказ и репутация, а не сиюминутная выгода. Фирма по оказанию компьютерных услуг всегда устранит проблему по гарантийному случаю, даже, если сотрудник, оказавший компьютерную помощь, больше не работает. </p>
                             </div>
                             <div class="butterflySingle text-left">
-                                <h2>Ответственность</h2>
-                                <p>Компания – юр. лицо, предоставляющая на производимые работы необходимую документацию. В случае неразрешимого конфликта, вы всегда можете обратиться в судебные органы. Деятельность частного мастера, как физ. лица, никак не обозначена в налоговых органах. Его работа, как правило, основана только на доверии.</p>
+                                <h3>Ответственность</h3>
+                                <p>Компания – юр. лицо, предоставляющая на производимые работы необходимую документацию. При возникновении конфликта, вы всегда можете обратиться в судебные органы. Деятельность частного мастера никак не обозначена в налоговых органах. Его работа, как правило, основана только на доверии.</p>
                             </div>
                         </div>
                     </div>
@@ -431,32 +425,32 @@
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>1</h3></div>
-                            <h3>Выезд мастера</h3>
+                            <h3>Выезд<br>мастера</h3>
                             <p>Мастер бесплатно выезжает к Вам к назначеному времени</p>
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>2</h3></div>
-                            <h3>Диагностика проблемы</h3>
+                            <h3>Диагностика<br>проблемы</h3>
                             <p>Мастер проводит диагностику возникшей проблемы бесплатно</p>
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>3</h3></div>
-                            <h3>Обозначение стоимости</h3>
+                            <h3>Обозначение<br>стоимости</h3>
                             <p>По результатам диагностики оглашается полная стоимость работ</p>
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>4</h3></div>
-                            <h3>Принятие решения</h3>
+                            <h3>Принятие<br>решения</h3>
                             <p>Вы принимаете решение о продолжении решения проблемы</p>
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>5</h3></div>
-                            <h3>Выполнение работ</h3>
+                            <h3>Выполнение<br>работ</h3>
                             <p>Мастер выполняет работы по устранению возникшей проблемы</p>
                         </div>
                         <div class="stagesItem col-lg-2 col-sm-4 col-xs-12">
                             <div class="stagesIcon"><h3>6</h3></div>
-                            <h3>Проблема решена</h3>
+                            <h3>Проблема<br>решена</h3>
                             <p>Вы получаете гарантию на все выполненные мастером работы.</p>
                         </div>
                     </div>
@@ -544,7 +538,9 @@
                             </div>
                         </div>
                         <div class="pricingButtons">
+                        <a href="#" class="redBtn"><i class="fa fa-user"></i><span>Вызвать мастера</span></a>
                         <a href="#" class="redBtn"><i class="fa fa-rub"></i><span>Подробнее о ценах</span></a>
+                        <a href="#" class="redBtn"><i class="fa fa-phone"></i><span>Заказать звонок</span></a>
                         </div>
                     </div>
                 </div>  
@@ -558,7 +554,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="footerTopContent">
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <h2>Популярные услуги</h2>
                                     <ul>
                                         <li><a href="#">Установка Windows XP/7/8/10 на ПК</a></li>
@@ -570,7 +566,7 @@
                                         <li><a href="#">Срочный ремонт техники</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                     <h2>Полезные статьи</h2>
                                     <ul>
                                         <li><a href="#">Обновление до Windows 10</a></li>
@@ -582,7 +578,7 @@
                                         <li><a href="#">Настройка Wi-Fi роутера</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <h2>Наши контакты</h2>
                                     <h3><a href="">+7 (812) 123-45-67</a></h3>
                                     <h4>Ежедневно c 9:00 до 21:00</h4>
