@@ -1,0 +1,377 @@
+
+/************************ 2. MODULES *************************************************************************************************/
+
+/************************ 2.1 Services Module ******************************************************************************************/
+
+.serviceImg{
+    width: 108px;
+    margin: 0 auto 37px;
+    height: 111px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.serviceImg:hover{
+    transform: scale(1.2);
+}
+.serviceContent{
+    position: relative;
+}
+.serviceContent h3 {
+    padding-bottom: 21px;
+}
+.serviceContent h3 a{
+    font-size: 22px;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+    color: #404040;
+}
+.serviceContent h3 a:hover{
+    color: #de3c2f;
+}
+.serviceContent h3 a span{
+    font-weight: 400;
+}
+.serviceList{
+    display: block;
+    text-align: left;
+    min-height: 300px;
+}
+.serviceList a{
+    color: inherit;
+}
+.serviceList a:hover{
+    color: #de3c2f;
+}
+.serviceList li{
+    border-bottom: 1px solid #f2f2f2;
+    color: #404040;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 0 8px;
+}
+.serviceList li:before{
+    content: "\f105";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    padding-right: 15px;
+    color: #de3c2f;
+    display: inline-block;
+}
+
+.serviceListLarge{
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.serviceListLarge a{
+    color: inherit;
+}
+
+.serviceListLarge a:hover{
+    color: #de3c2f;
+}
+
+.serviceListLarge li{
+    color: #fff;
+    display: block;
+    font-size: 23px;
+    font-weight: 300;
+    padding: 13px 0 8px;
+}
+.serviceListLarge li:before{
+    content: "\f105";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    padding-right: 15px;
+    color: #de3c2f;
+    display: inline-block;
+}
+
+/************************ 2.2 Call To Action Module ******************************************************************************************/
+
+.callSingle{
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.callSinglt.first{
+    padding-top: 33px;
+}
+.callContent{
+    margin-bottom: 33px;
+    padding-top: 10px;
+    width: 260px;
+}
+.callContent h4 {
+    padding-bottom: 12px;
+}
+.callContent h4 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+
+.callSingleLight .callContent h4 {
+    color: #40403f;
+}
+
+.callContent h4 span{
+    font-weight: 300;
+}
+.callContent p{
+    color: #bfbfbf;
+}
+.callIcon, .stagesIcon{
+    color: #fff;
+    background: #de3c2f none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 80px;
+    text-align: center;
+    width: 80px;
+    padding-top: 23px;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+
+.callIcon i{
+    display: inline-block;
+    font-size: 32px;
+    color: #fff;
+    -webkit-transition: all 700ms ease-in-out;
+    -moz-transition: all 700ms ease-in-out;
+    -ms-transition: all 700ms ease-in-out;
+    -o-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in-out;
+}
+
+.callImg {
+   margin-top: 40px;
+}
+
+.callButtons {
+    padding-top: 30px;
+}
+
+/************************ 2.3 Butterfly Module ******************************************************************************************/
+
+.butterflyImg {
+    padding-top: 100px;
+}
+
+.butterflySingle {
+    margin-bottom: 30px;
+}
+.butterflySingle h3 {
+    font-size: 30px;
+    color: #de3c2f;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+
+/************************ 2.4 Stages Module ******************************************************************************************/
+
+.stagesItem {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stagesItem h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.stagesItem p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.stagesIcon {
+    margin: 0 auto;
+}
+
+.stagesIcon h3 {
+    color: inherit;
+    font-size: 35px;
+    margin-top: 6px;
+}
+
+
+/************************ 2.5 Stages Module ******************************************************************************************/
+
+.pricingItem {
+    padding: 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricingItem h3 {
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+.pricingItem h4 {
+    font-size: 32px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.pricingItem h4 i {
+    font-size: 21px;
+}
+
+.pricingItem h4 span {
+    font-size: 21px;
+}
+
+.pricingTable {
+    background: #fff;
+    min-height: 100px;
+    border: 1px solid #de3c2f;
+}
+
+.pricingTable ul {
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.pricingTable li {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pricingPanel {
+    padding: 15px;
+    color: #fff;
+    background: #de3c2f;
+    text-align: center;
+}
+
+.pricingIcon {
+    padding-top: 15px;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.pricingButtons {
+    text-align: center;
+}
+
+/************************ 2.6 Top Content Module ******************************************************************************************/
+
+.topContentImg {
+    padding: 20px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.topContentImg img {
+    max-width: 300px;
+}
+
+.topContent{
+    margin-bottom: 30px;
+}
+.topContent h2{
+    font-size: 28px;
+    line-height: 30px;
+    color: #de3c2f;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.topContent p{
+    padding: 10px 0;
+    margin: 0;
+    color: #404040;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.topContent ul{
+    padding-left: 45px;
+}
+
+.topContent li{
+    color: #404040;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.topContent li:before{
+    color: #de3c2f;
+    content: '‣';
+    font-size: 20px;
+    padding-right: 4px;
+    line-height: 16px;
+}
+
+/************************ 2.7 Bottom Content Module ******************************************************************************************/
+
+.bottomContent{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.bottomContent h3, .bottomContent h2{
+    font-size: 22px;
+    line-height: 22px;
+    color: #de3c2f;
+    font-weight: 300;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.bottomContent p{
+    padding: 5px 0;
+    margin: 0;
+    color: #404040;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.bottomContent ul{
+    padding: 20px 0;
+    padding-left: 45px;
+}
+
+.bottomContent li{
+    color: #404040;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 0;
+}
+
+.bottomContent li:before{
+    color: #de3c2f;
+    font-size: 20px;
+    content: '‣';
+    padding-right: 4px;
+    line-height: 15px;
+}
+
+
