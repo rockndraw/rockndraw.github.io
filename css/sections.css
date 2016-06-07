@@ -246,7 +246,7 @@
     padding: 5px 25px;
     text-transform: uppercase;
 }
-.headCaption h2{
+.headCaption h2, .headCaption h1{
     font-size: 60px;
     line-height: 60px;
     color: #404040;
