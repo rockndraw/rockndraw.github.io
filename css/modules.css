@@ -375,3 +375,143 @@
 }
 
 
+/************************ 2.8 Blog Module ******************************************************************************************/
+
+.widget{
+    margin-bottom: 50px;
+}
+.widget.tags{
+    margin-bottom: 40px;
+}
+.widgetTitle{
+    font-size: 30px;
+    color: #404040;
+    margin-bottom: 27px;
+}
+.widget ul li{
+    border-bottom: 1px solid #f2f2f2;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 0 13px;
+}
+.widget ul li:last-child{
+    margin-bottom: 0;
+}
+.widget ul li a{
+    font-size: 20px;
+    color: #979797;
+    display: block;
+    font-weight: 300;
+    position: relative;
+}
+.widget ul li a:hover{
+    color: #de3c2f;
+}
+.widget ul li a:after {
+    color: #de3c2f;
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 300;
+}
+.widget.tags a{
+    background: #404040 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 9px;
+    margin-right: 6px;
+    padding: 7px 28px 9px;
+    text-transform: uppercase;
+}
+.widget.tags a.active,
+.widget.tags a:hover{
+    background: #de3c2f;
+}
+.blogCotent{
+    position: relative;
+    display: table;
+    clear: both;
+}
+.postThumb{
+    position: relative;
+}
+.postDate{
+    background: #de3c2f none repeat scroll 0 0;
+    height: 100px;
+    position: absolute;
+    top: auto;
+    width: 150px;
+    bottom: 0;
+}
+.postThumb.first .postDate{
+    bottom: 1px;
+}
+.postThumb.right{
+    height: 175px;
+}
+.postThumb.right .postDate{
+    height: 100%;
+}
+.blogCotent.last{
+    margin-top: 30px;
+}
+.postDate h3{
+    font-size: 40px;
+    color: #fff;
+    padding-top: 10px;
+}
+.postDate p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.postDate a, .postDate a:hover{
+    background: #404040;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 0;
+    position: relative;
+    text-transform: uppercase;
+    top: 3px;
+}
+
+.postContent {
+    background: #fff;
+    padding: 0 37px 45px;
+}
+.postContent h3 a{
+    color: #404040;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 30px 0 20px;
+    text-align: left;
+}
+
+.postContent p {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+}
+.postContent h3 a:hover{
+    color: #de3c2f;
+}
+.postThumb.first img{
+    height: 560px;
+}
+
+.postMeta {
+    margin-top: 15px;
+}
+
+.postMeta a{
+    color: #404040;
+    font-weight: 600;
+}
+
