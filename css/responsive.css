@@ -29,9 +29,7 @@
         top: 260px;
     }
     /**************** Slider ***************/
-    .headCaption {
-        font-size: 90px;
-    }
+    
     .sliderImg{
         width: 875px;
     }
@@ -47,7 +45,7 @@
     }
     .sliderArea .tp-caption.lightgrey_divider.lft.resFix{
         left: auto ;
-        right: 0 ;
+        right: 150px ;
         top: 68px ;
     }
 
@@ -99,7 +97,7 @@
         left: 40px !important;
         top: 445px !important;
     }
-    .headCaption h2, .headCaption h1 {
+    .headCaption {
         font-size: 50px;
         line-height: 50px;
     }
@@ -413,7 +411,7 @@
         top: 200px !important; 
     }
 
-    .headCaption h2, .headCaption h1{
+    .headCaption{
         font-size: 40px;
         line-height: 43px;
         padding: 0;
@@ -457,7 +455,7 @@
         top: 170px !important; 
     }
 
-    .headCaption h2, .headCaption h1{
+    .headCaption{
         font-size: 35px;
         line-height: 36px;
         padding: 0;
@@ -481,7 +479,7 @@
 
     /**************** Services ***************/ 
 
-    .serviceContent h3 {
+    .serviceContent h2 {
     	margin-top: -25px;
     }
 

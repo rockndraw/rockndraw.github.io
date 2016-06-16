@@ -16,10 +16,10 @@
 .serviceContent{
     position: relative;
 }
-.serviceContent h3 {
+.serviceContent h2 {
     padding-bottom: 21px;
 }
-.serviceContent h3 a{
+.serviceContent h2 a{
     font-size: 22px;
     -webkit-transition: all 700ms ease-in-out;
     -moz-transition: all 700ms ease-in-out;
@@ -28,10 +28,10 @@
     transition: all 700ms ease-in-out;
     color: #404040;
 }
-.serviceContent h3 a:hover{
+.serviceContent h2 a:hover{
     color: #de3c2f;
 }
-.serviceContent h3 a span{
+.serviceContent h2 a span{
     font-weight: 400;
 }
 .serviceList{
@@ -108,10 +108,10 @@
     padding-top: 10px;
     width: 260px;
 }
-.callContent h4 {
+.callContent h3 {
     padding-bottom: 12px;
 }
-.callContent h4 {
+.callContent h3 {
     font-size: 30px;
     line-height: 30px;
     color: #fff;
@@ -122,11 +122,11 @@
     transition: all 700ms ease-in-out;
 }
 
-.callSingleLight .callContent h4 {
+.callSingleLight .callContent h3 {
     color: #40403f;
 }
 
-.callContent h4 span{
+.callContent h3 span{
     font-weight: 300;
 }
 .callContent p{
@@ -216,30 +216,30 @@
 }
 
 
-/************************ 2.5 Stages Module ******************************************************************************************/
+/************************ 2.5 Pricing Module ******************************************************************************************/
 
-.pricingItem {
-    padding: 0 10px;
+.item {
+    margin: 3px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.pricingItem h3 {
+.item h3 {
     font-size: 22px;
     padding: 20px 0;
 }
 
-.pricingItem h4 {
+.item h4 {
     font-size: 32px;
     padding: 5px 0;
     color: #fff;
 }
 
-.pricingItem h4 i {
+.item h4 i {
     font-size: 21px;
 }
 
-.pricingItem h4 span {
+.item h4 span {
     font-size: 21px;
 }
 
@@ -249,14 +249,22 @@
     border: 1px solid #de3c2f;
 }
 
-.pricingTable ul {
-    text-align: left;
-    padding: 10px 5px;
+.table-container {
+    height: 290px
 }
 
-.pricingTable li {
-    padding: 10px;
-    font-size: 16px;
+.pricingTable table {
+    width: 100%;
+}
+
+.pricingTable td {
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+}
+
+.pricingTable tr:nth-child(odd) {
+    background: #f5f4f4;
 }
 
 .pricingPanel {
@@ -267,12 +275,14 @@
 }
 
 .pricingIcon {
-    padding-top: 15px;
+    padding-top: 28px;
     margin: 0 auto;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     border: 2px solid #fff;
     border-radius: 50%;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .pricingButtons {

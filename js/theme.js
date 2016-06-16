@@ -9,34 +9,7 @@
             $(".loaderWrap").delay(500).fadeOut("slow");
         }
     });
-//========================
-// Pretty Photo
-//========================
-    if ($("a[data-rel^='prettyPhoto']").length > 0) {
-        $("a[data-rel^='prettyPhoto']").prettyPhoto({
-            social_tools: false
-        });
-    }
-//=======================================================
-// Gallery Mixing
-//=======================================================
-    if ($('#mixer').length > 0)
-    {
-        $('#mixer').themeWar();
-    }
-//=======================================================
-// Circle Bar
-//=======================================================
-    //=======================================================
-    // Portfolio Hover
-    //=======================================================
-    if ($('.folioImg').length > 0) {
-        $(' .folioImg').each(function () {
-            $(this).hoverdir({
-                hoverDelay: 90
-            });
-        });
-    }
+
     //=======================================================
     // Home Slider
     //=======================================================
@@ -86,56 +59,7 @@
         $(".innerMenu > ul").slideToggle('slow');
         $(this).toggleClass('active');
     });
-    //=======================================================
-    // Color Preset
-    //=======================================================
-    if ($(".presetArea").length > 0)
-    {
-        var switchs = true;
-        $("#switches").on('click', function (e) {
-            e.preventDefault();
-            if (switchs)
-            {
-                $(this).addClass('active');
-                $(".presetArea").animate({'left': '0px'}, 400);
-                switchs = false;
-            }
-            else
-            {
-                $(this).removeClass('active');
-                $(".presetArea").animate({'left': '-290px'}, 400);
-                switchs = true;
-            }
-        });
-
-        $(".layouta").on('click', function (e) {
-            e.preventDefault();
-            var layout = $(this).attr('href');
-            if (layout == 'wide')
-            {
-                $('body').removeClass('bgOne bgTwo bgThree bgFour bgFive');
-            }
-            $('.layouta').removeClass('active');
-            $(this).addClass('active');
-            $("#layout").attr('href', 'css/colorpreset/' + layout + '.css');
-        });
-
-        $(".colorChem a").click(function (e) {
-            e.preventDefault();
-            var colorsch = $(this).attr('href');
-            $('.colorChem a').removeClass('active');
-            $(this).addClass('active');
-            $("#colorChem").attr('href', 'css/colorpreset/' + colorsch + '.css');
-        });
-
-        $(".accentColor a").click(function (e) {
-            e.preventDefault();
-            var color = $(this).attr('href');
-            $(".accentColor a").removeClass('active');
-            $(this).addClass('active');
-            $("#colorsSet").attr('href', 'css/colorpreset/' + color + '.css');
-        });
-    }
+   
     //=======================================================
     // Fixed Header 
     //=======================================================
@@ -166,40 +90,7 @@
         });
     }
 
-    //========================================================
-    // Subscribe Form
-    //========================================================
-    if ($("#subscribeForm").length > 0)
-    {
-        $("#subscribeForm").submit(function (e) {
-            e.preventDefault();
-            $("button i", this).removeClass('icon-pencil').addClass('fa fa-spinner fa-spin');
-            var email = $("#subs_email").val();
-            if (email !== '')
-            {
-                $("#subs_email").removeClass('errorInput');
-                $.ajax({
-                    type: "POST",
-                    url: 'subscribe.php',
-                    data: {email: email},
-                    success: function (data)
-                    {
-                        $("#subs_email").val('');
-                        $("#subs_email").attr('placeholder', 'Successfully Done!');
-                        $("#subs_email").addClass('successInput');
-                        $("#subscribeForm button i").removeClass('fa fa-spinner fa-spin').addClass('icon-pen2');
-                    }
-                });
-            }
-            else
-            {
-                $("#subs_email").addClass('errorInput');
-                $("button i", this).removeClass('fa fa-spinner fa-spin').addClass('icon-pen2');
-            }
-            return false;
-        });
 
-    }
     //========================================================
     // Contact
     //========================================================
@@ -228,7 +119,6 @@
                     }
                 }
             });
-            //alert(required);
             if (required === 0)
             {
                 $("#unConSubmit").html('Sending...');
@@ -269,42 +159,6 @@
         });
         wow.init();
     }
-    //========================
-    // Image Carousel
-    //========================
-    if ($(".caroselArea").length > 0)
-    {
-        // home page slider 
-        $('.imageCaros').slick({
-            centerMode: true,
-            centerPadding: '80px',
-            slidesToShow: 3,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    }
+   
 })(jQuery);
+

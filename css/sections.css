@@ -246,7 +246,7 @@
     padding: 5px 25px;
     text-transform: uppercase;
 }
-.headCaption h2, .headCaption h1{
+.headCaption {
     font-size: 60px;
     line-height: 60px;
     color: #404040;
@@ -402,7 +402,7 @@
 
 /************************ 1.4. Content Section ************************************************************************************************************/
 
-.contentTitle h2, .contentTitleLight h2{
+.contentTitle h2, .contentTitleLight h2, .contentTitle h1, .contentTitleLight h1{
     padding-top: 20px;
     font-size: 37px;
     margin-bottom: 45px;
@@ -412,7 +412,7 @@
     color: #fff;
 }
 
-.contentTitle h2 span, .contentTitleLight h2 span{
+.contentTitle h2 span, .contentTitleLight h2 span, .contentTitle h1 span, .contentTitleLight h1 span{
     font-weight: 400;
 }
 
@@ -511,13 +511,13 @@
 }
 .footerTopContent h2{
     color: #fff;
-    font-size: 30px;
+    font-size: 45px;
 }
 
 .footerTopContent h3{
     padding: 30px 0;
     color: #fff;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .footerTopContent h4{
