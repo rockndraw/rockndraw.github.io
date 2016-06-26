@@ -139,6 +139,38 @@ ul,li{
 	margin:0px;	
 }
 
+.price-table {
+	width: 90%;
+	margin: 0 auto;
+	border: 2px solid #fdc236;
+	margin-bottom: 50px;
+}
+
+.price-table td {
+	font-size: 18px;
+	line-height: 20px;
+	padding: 7px;
+	border: 2px solid #fdc236;
+	color: #404040;
+}
+
+.price-table tr td:nth-of-type(2), .price-table tr td:nth-of-type(3) {
+	width: 95px;
+	text-align: center;
+}
+
+.price-table thead td {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.price-table .table-chapter {
+	background: #fdc236;
+	text-transform: uppercase;
+	font-weight: 500; 
+}
+
 .theme-btn{
 	display:inline-block;
 	transition:all 0.3s ease;
