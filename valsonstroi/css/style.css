@@ -958,7 +958,7 @@ ul,li{
 	left:-15px;
 	margin-top:5px;
 	top:110%;
-	width:220px;
+	width:310px;
 	padding:0px;
 	z-index:100;
 	display:none;
@@ -1523,7 +1523,7 @@ ul,li{
 .default-service-column .content .text{
 	position:relative;
 	font-size:12px;
-	line-height:20px;
+	line-height:16px;
 	margin-bottom:10px;
 	color:#202e31;	
 }
@@ -3360,6 +3360,11 @@ ul,li{
 	z-index:1;	
 }
 
+.text h3{
+	color: #404040;
+	padding-bottom: 15px;
+}
+
 .page-title h1{
 	font-size:30px;
 	text-transform:uppercase;
@@ -3390,6 +3395,14 @@ ul,li{
 	text-transform:uppercase;	
 }
 
+.breadcrumb {
+	margin-top: -20px;
+	background: transparent;
+}
+
+.breadcrumb li a:hover{
+	color: #fff;
+}
 /*** 
 
 ====================================================================
