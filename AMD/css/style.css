@@ -775,26 +775,26 @@ input#sidebar-search:focus {
     text-align: center;
     font-family: 'NeoSansProBold', sans-serif;
     color: #212121;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin: 0;
     width: 100%;
 }
-.work-title:after {
-    content: '\f111';
-    font-family: 'FontAwesome';
-    color: #f15c58;
-    font-size: 5px;
-    margin-left: 15px;
-    vertical-align: middle;
-}
 .work-descr {
     color: #212121;
-    text-transform: uppercase;
-    line-height: 12px;
-    padding: 0;
+    font-size: 19px;
+    padding-bottom: 10px;
     margin: 0;
 }
+.work-descr button{
+    background: #f15c58;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0;
+    border: 0;
+}
+
 .work-caption .spriter {
     width: 30px;
     margin: 0 auto;
@@ -1605,6 +1605,136 @@ display: block;
 width: 120px;
 height: 100px;
 }
+
+#compare table {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+#compare table thead td{
+  font-family: "NeoSansProBold";
+  color: #fff;
+  background: #ed1c24;
+  border: 1px solid #ed1c24;
+  padding: 10px 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#compare table tbody td{
+  color: #404040;
+  border: 1px solid #ed1c24;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.technologies tbody tr td:first-child {
+  text-align: left;
+  font-size: 14px;
+  padding-left: 15px;
+  background: #f4b2b2;
+}
+
+#action {
+  margin-top: -140px;
+}
+
+#action h3, #action p{
+  text-align: left;
+  color: #404040;
+}
+
+#action p{
+  font-size: 16px;
+}
+
+#action p span{
+  font-size: 14px;
+  color: #666;
+}
+
+#action form {
+  margin-top: 25px;
+}
+
+
+#action input[type="text"],#action input[type="email"],#action input[type="submit"] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  border: 1px solid #ed1c24;
+  padding: 0 10px;
+  font-family: "NeoSansProRegular"
+}
+
+input[type="submit"] {
+  background: #ed1c24;
+  color: #fff;
+}
+
+.fileform {
+    border: 1px solid #ed1c24;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.fileform .selectbutton {
+    background-color: #ed1c24;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 12px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+    cursor: pointer;
+}
+
+.fileform #upload{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 30px;
+    z-index:20;
+}
+
+.fileform #fileformlabel {
+float: left;
+height: 50px;
+overflow: hidden;
+padding: 10px;
+text-align: left;
+vertical-align: middle;
+width:calc(100%-140px);
+}
+
+
+#laptops {
+  margin-top: -180px;
+}
+
+#laptops h2{
+  padding: 50px 0 40px 0;
+  text-align: center;
+}
+
 
 .call-to-action {
   background: #ed1c24;
