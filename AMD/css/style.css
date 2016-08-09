@@ -1477,6 +1477,10 @@ footer {
 .p-t-100 {
     padding-top: 100px;
 }
+.p-t-50 {
+    padding-top: 50px;
+}
+
 .p-t-80 {
     padding-top: 80px;
 }
@@ -1520,6 +1524,121 @@ footer {
     width: 100%;
 }
 
+#advantages {
+  margin-top: -170px;
+}
+
+#advantages h1 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#advantages h2 {
+  font-size: 21px;
+}
+
+.row-white h2 {
+  color: #404040;
+  padding: 0 0 15px 0;
+  font-size: 27px;
+  text-align: center;
+}
+
+#advantages p {
+  font-size: 17px;
+}
+
+#advantages img {
+  max-width: 70%;
+}
+
+#advantages ul {
+  text-align: left;
+  list-style: none;
+}
+
+#advantages ul li{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px 0;
+}
+
+#advantages ul li:before{
+  content: '✓';
+  color: #ed1c24;
+  margin-left: -14px;
+}
+
+#compare {
+  margin-top: -180px;
+}
+
+#compare .row-compare {
+  background: url(../img/compare.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+#compare h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#compare h3 {
+  text-align: center;
+}
+
+#compare p {
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#compare .cpu-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+#compare .cpu-logos img{
+display: block;
+width: 120px;
+height: 100px;
+}
+
+.call-to-action {
+  background: #ed1c24;
+  color: #fff;
+  padding: 15px 25px;
+  margin-left: 20px;
+  margin-top: 45px;
+  font-size: 23px;
+  line-height: 26px;
+  text-transform: uppercase;
+  border: 0;
+  transition: 1s;
+}
+
+.call-to-action:hover {
+  background: #b11116;
+}
+
+.row-advantages {
+  background: url(../img/advantages.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.row-white {
+  background: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.progress-title{
+  text-align: left !important;
+}
+
 #uifuse-slider .item {
     background: transparent;
     min-height: 820px;
@@ -1533,7 +1652,7 @@ footer {
     opacity: 0.9;
     display: flex;
     position: absolute;
-    top: -260px;
+    top: -300px;
     left: 230px;
 }
 
@@ -1573,7 +1692,7 @@ footer {
 }
 
 #uifuse-slider .caption-polygon {
-    padding: 50px 60px;
+    padding: 40px 60px;
     background: #ed1c24;
     transform: skew(-45deg);
     text-align: right;
