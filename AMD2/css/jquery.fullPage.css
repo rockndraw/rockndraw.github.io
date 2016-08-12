@@ -93,12 +93,12 @@ html.fp-enabled,
 }
 
 #gen6compare .fp-next, #gen7compare .fp-next {
-  margin-left: 1230px;
+  margin-left: calc(50vw + 580px);
   display: block;
 }
 
 #gen6compare .fp-prev, #gen7compare .fp-prev {
-  margin-left: 0;
+  margin-left: calc(50vw - 620px);
   display: block;
 }
 
