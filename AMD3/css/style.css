@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "NeoSansProRegular";
+    src: url("../fonts/NeoSansProRegular/NeoSansProRegular.ttf");
+}
+
+@font-face {
+  font-family: "NeoSansProBold";
+  src: url("../fonts/NeoSansProBold/NeoSansProBold.ttf");
+}
+
+body {
+    font-family: "NeoSansProRegular";
+}
+div {
+  box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+}
+
+.wide {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0;
+  right: calc((100vw - 1300px)/2);
+  z-index: 1000;
+  background-color: rgba(237,28,36,0.6);
+  transform: skew(45deg);
+  padding: 20px 40px;
+}
+
+.backtotop * {
+  transform: skew(-45deg);
+}
+
+.backtotop a, .backtotop a:hover, .backtotop a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+header .logo {
+  background-color: rgba(237,28,36,0.6);
+  transform: skew(45deg);
+  padding: 20px 40px;
+}
+
+header .logo * {
+  transform: skew(-45deg);
+}
+
+header nav {
+  padding: 20px 40px;
+}
+
+header nav ul {
+    text-align: right;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 14px 0;
+}
+
+header nav ul li a {
+    font-family: "NeoSansProBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #ed1c24;
+}
+
+header nav ul li a:link {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+.mainscreen h1 {
+  padding-bottom: 20px;
+  font-family: "NeoSansProBold";
+  background:url('../img/mask.jpg');
+    background-repeat:repeat-x;
+    background-position:0 0;
+    font-size:70px;
+    text-transform:uppercase;
+    color:transparent;
+    -webkit-font-smoothing:antialiased;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+    -webkit-animation:Background 30s linear infinite;
+    -moz-animation:Background 30s linear infinite;
+    -ms-animation:Background 30s linear infinite;
+    -o-animation:Background 30s linear infinite;
+    animation:Background 30s linear infinite;
+}
+@keyframes Background {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-webkit-keyframes Background {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-ms-keyframes Background {<     from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-moz-keyframes Background {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+.mainscreen p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.more {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid #ed1c24;
+  color: #ed1c24;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  background: transparent;
+  transition: 1s;
+}
+
+.gen7 {
+  background: url("../img/bg1.jpg");
+  background-size: cover;
+}
+
+.gen7 h2 {
+  font-size: 50px;
+  font-family: "NeoSansProBold";
+  text-transform: uppercase;
+}
+.gen7 p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.gen7 .more {
+  font-size: 16px;
+  text-transform: none;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+.more:hover {
+  color: #fff;
+  background: #ed1c24;
+}
+.gen7feat > div {
+  text-align: center;
+}
+.gen7feat img {
+  width: 50%;
+}
+.gen7feat h3 {
+  font-family: "NeoSansProBold";
+  font-size: 16px;
+}
+.gen7feat ul {
+  text-align: left;
+  list-style: none;
+  margin-top: 20px;
+}
+.gen7feat ul li{
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 15px;
+}
+.gen7feat ul li:before{
+  content: "✓";
+  color: #ed1c24;
+  margin-left: -14px;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+table thead td{
+  font-family: "NeoSansProBold";
+  color: #fff;
+  background: #ed1c24;
+  border: 1px solid #ed1c24;
+  padding: 10px 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+table tbody td{
+  color: #404040;
+  border: 1px solid #ed1c24;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.gen6 {
+  background: url("../img/bg2.jpg");
+  background-size: cover;
+}
+.gen6 h2 {
+  font-size: 50px;
+  font-family: "NeoSansProBold";
+  text-transform: uppercase;
+  color: #fff;
+}
+.gen6 p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+.gen6 .more {
+  font-size: 16px;
+  text-transform: none;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+
+.game h2 {
+  padding-bottom: 20px;
+  font-family: "NeoSansProBold";
+  background:url('../img/mask.jpg');
+    background-repeat:repeat-x;
+    background-position:0 0;
+    background-size: cover;
+    font-size:150px;
+    line-height: 150px;
+    text-transform:uppercase;
+    color:transparent;
+    -webkit-font-smoothing:antialiased;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+}
+.game p {
+  margin-top: 20px;
+  font-size: 18px;
+}
