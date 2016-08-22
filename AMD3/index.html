@@ -22,17 +22,23 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#apugen7">APU 7-го поколения</a></li>
-					<li><a href="#apugen6">APU 6-го поколения</a></li>
-					<li><a href="#game">Мы в игре</a></li>
+					<li>
+						<a href="#apugen7"><img src="img/gen7.png" />APU 7-го поколения</a>
+					</li>
+					<li>
+						<a href="#apugen6"><img src="img/gen6.png" />APU 6-го поколения</a>
+					</li>
+					<li>
+						<a href="#game"><img src="img/game.png" />Акция</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-			<div class="backtotop">
-				<a href="#mainscreen"><i class="fa fa-arrow-up fa-2x"></i></a>
-			</div>
+	<div class="backtotop" id="upbutton">
+		<a href="#mainscreen"><i class="fa fa-arrow-up fa-2x"></i></a>
+	</div>
 
 	<div id="fullpage">
 		<div class="section active mainscreen" id="section0">
@@ -42,10 +48,10 @@
 					Решения AMD найдутся везде: в передовых игровых консолях, самом большом в мире HD-экране площадью свыше 2300 кв.м. на Таймс Сквер, суперкомпьютере Orion, iMac с дисплеем 5K и MacBook Pro, ноутбуках c ОС Windows 10 и других устройствах.
 				</p>
 				<p>
-					Откройте для себя технологии, вдохновляющие на инновации. Выберите  мобильный процессор, подходящий именно вам.
+					Откройте для себя технологии, вдохновляющие на инновации. Выберите мобильный процессор, подходящий именно вам.
 				</p>
 				<a href="#">
-					<button class="more">Узнать больше...</button>
+					<button class="more">Узнать больше</button>
 				</a>
 			</div>
 
@@ -57,67 +63,84 @@
 					Мы создали гибридные процессоры AMD A-серии, чтобы вы восхищались производительностью, энергоэффективностью, плавным воспроизведением HD-видео и онлайн-играми на ноутбуке.
 				</p>
 				<div class="col-md-4">
-					<button class="more">Производительность имеет значение</button>
+					<a href="#gen7info">
+						<button class="more">Производительность имеет значение</button>
+					</a>
 				</div>
 				<div class="col-md-4">
-					<button class="more">Лучше один раз увидеть</button>
+					<a href="#gen7info">
+						<button class="more">Лучше один раз увидеть</button>
+					</a>
 				</div>
 				<div class="col-md-4">
-					<button class="more">Работайте быстрее, играйте дольше</button>
+					<a href="#gen7info">
+						<button class="more">Работайте быстрее, играйте дольше</button>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div class="section gen7feat" id="section2">
 			<div class="container">
-			<div class="col-md-4">
-					<img src="img/performance.png" />
-					<h3>Внушительная производительность</h3>
-					<ul>
-						<li>
-							​Получите качество изображения, затмевающее 4K, играя в свои любимые игры, даже на дисплее с разрешением 1080p с виртуальным сверхвысоким разрешением.
-						</li>
-						<li>
-							​Никаких разрывов изображений и подтормаживаний с технологией AMD FreeSync™.
-						</li>
-						<li>
-							Благодаря технологии AMD Start Now и ее высокой скорости возобновления работы вернуться к своим заданиям или продолжить игру теперь можно быстрее, чем когда либо.
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<img src="img/visual.png" />
-					<h3>Потрясающие визуальные ощущения</h3>
-					<ul>
-						<li>
-							​Качественные игры дома и в пути благодаря архитектуре Graphics Core Next и поддержке программных интерфейсов DirectX® 12 и Vulkan™.
-						</li>
-						<li>
-							​Автоматически улучшите качество видео, отображения цветов, контраста и расширения для всех ваших любимых фотографий с технологией AMD Perfect Picture.
-						</li>
-						<li>
-							Плавное воспроизведение видео и долгий срок работы от аккумулятора для превосходного потокового воспроизведения на сверхвысоком разрешении с ускоренным декодированием HEVC.
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<img src="img/battery.png" />
-					<h3>Работайте быстрее, играйте дольше</h3>
-					<ul>
-						<li>
-							Технологии дополнительного управления энергопотреблением в зависимости от потребности обеспечивают повышение мощности, когда она необходима, и экономию энергии, когда она не требуется.</li>
-						<li>
-							​AMD Turbo Core technology динамически повышает производительность, когда вам это необходимо.
-						</li>
-						<li>
-							Установите максимальное значение частоты кадров для игр с технологией управления частотой кадров, чтобы экономить электроэнергию, уменьшить уровень шума и тепловыделение.
-						</li>
-					</ul>
+				<nav class="slider-nav">
+					<a class="nav__item active" href="#gen7info/slide1">Описание</a>
+					<a>|</a>
+					<a class="nav__item" href="#gen7info/slide2">Технологии</a>
+					<a>|</a>
+					<a class="nav__item" href="#gen7info/slide3">Характеристики</a>
+				</nav>
+			</div>
+
+			<div class="slide active" data-anchor="slide1">
+				<div class="container">
+					<div class="col-md-4">
+						<img src="img/performance.png" />
+						<h3>Производительность имеет значение</h3>
+						<ul>
+							<li>
+								Наслаждайтесь четкостью изображения, не уступающей разрешению 4К, даже на дисплее Full HD благодаря технологии VSR.
+							</li>
+							<li>
+								​Забудьте о подтормаживаниях картинки и разрывах изображения с технологией AMD FreeSync™.
+							</li>
+							<li>
+								Мгновенно возвращайтесь к работе или играйте еще быстрее благодаря технологии AMD Start Now.
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="img/visual.png" />
+						<h3>Лучше один раз увидеть</h3>
+						<ul>
+							<li>
+								Играйте дома и в пути благодаря архитектуре Graphics Core Next и поддержке программных интерфейсов DirectX® 12 и Vulkan™.
+							</li>
+							<li>
+								​Автоматически улучшайте качество видео, насыщенность и контраст всех ваших любимых фотографий с технологией AMD Perfect Picture.
+							</li>
+							<li>
+								Оцените плавность воспроизведения и долгий срок работы от аккумулятора для потокового видео в сверхвысоком разрешении благодаря ускоренному декодированию HEVC.
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="img/battery.png" />
+						<h3>Работайте быстрее, играйте дольше</h3>
+						<ul>
+							<li>
+								Экономьте заряд аккумулятора, когда вам это действительно необходимо, благодаря технологии дополнительного управления энергопотреблением.</li>
+							<li>
+								Повышайте производительность с технологией AMD Turbo Core technology.
+							</li>
+							<li>
+								Установите максимальное значение частоты кадров для игр при помощи технологии FRTC и экономьте заряд аккумулятора, уменьшайте шум и тепловыделение.
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="section" id="section3">
-			<div class="container">
-				<table class="technologies">
+			<div class="slide" data-anchor="slide2">
+				<div class="container">
+					<table class="technologies">
 						<thead>
 							<tr>
 								<td>ТЕХНОЛОГИЯ</td>
@@ -131,7 +154,11 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Vulkan™ и DirectX®12 с поддержкой нескольких адаптеров</td>
+								<td>Vulkan™ и DirectX®12 с поддержкой нескольких адаптеров
+									<div class="tech">
+										Описание технологии Vulkan™ и DirectX®12
+									</div>
+								</td>
 								<td>✓</td>
 								<td></td>
 								<td></td>
@@ -140,7 +167,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>Управление частотой кадров</td>
+								<td>Управление частотой кадров
+									<div class="tech">
+										Описание технологии Управление частотой кадров
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>​</td>
@@ -149,7 +180,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>Технология AMD Eyefinity</td>
+								<td>Технология AMD Eyefinity
+									<div class="tech">
+										Описание технологии AMD Eyefinity
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td></td>
@@ -158,7 +193,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>Двойная Графика AMD</td>
+								<td>Двойная Графика AMD
+									<div class="tech">
+										Описание технологии Двойная Графика AMD
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -167,7 +206,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved</td>
+								<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved
+									<div class="tech">
+										Описание технологии AMD Gaming Evolved
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -176,7 +219,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>Виртуальное сверхвысокое разрешение</td>
+								<td>Виртуальное сверхвысокое разрешение
+									<div class="tech">
+										Описание технологии Виртуальное сверхвысокое разрешение
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -185,7 +232,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>​Технология AMD FreeSync™</td>
+								<td>​Технология AMD FreeSync™
+									<div class="tech">
+										Описание технологии AMD FreeSync™
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -194,7 +245,11 @@
 								<td>​</td>
 							</tr>
 							<tr>
-								<td>​Декодирование потокового воспроизведения VP9</td>
+								<td>​Декодирование потокового воспроизведения VP9
+									<div class="tech">
+										Описание технологии Декодирование потокового воспроизведения VP9
+									</div>
+								</td>
 								<td>​FHD</td>
 								<td>​FHD</td>
 								<td>​FHD</td>
@@ -203,7 +258,11 @@
 								<td>​HD</td>
 							</tr>
 							<tr>
-								<td>Встроенная поддержка декодирования HEVC</td>
+								<td>Встроенная поддержка декодирования HEVC
+									<div class="tech">
+										Описание технологии Встроенная поддержка декодирования HEVC
+									</div>
+								</td>
 								<td>UHD</td>
 								<td>UHD</td>
 								<td>UHD</td>
@@ -212,7 +271,11 @@
 								<td>​FHD</td>
 							</tr>
 							<tr>
-								<td>​AMD Radeon Graphics Core Next</td>
+								<td>​AMD Radeon Graphics Core Next
+									<div class="tech">
+										Описание технологии ​AMD Radeon Graphics Core Next
+									</div>
+								</td>
 								<td>​R7</td>
 								<td>​R7</td>
 								<td>​R5</td>
@@ -221,7 +284,11 @@
 								<td>​R2</td>
 							</tr>
 							<tr>
-								<td>​AMD Perfect Picture + AMD Steady Video</td>
+								<td>​AMD Perfect Picture + AMD Steady Video
+									<div class="tech">
+										Описание технологии AMD Perfect Picture + AMD Steady Video
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -230,7 +297,11 @@
 								<td>✓</td>
 							</tr>
 							<tr>
-								<td>Встроенная поддержка дисплеев с разрешением 4K</td>
+								<td>Встроенная поддержка дисплеев с разрешением 4K
+									<div class="tech">
+										Описание технологии
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -239,7 +310,11 @@
 								<td>✓</td>
 							</tr>
 							<tr>
-								<td>​AMD Turbo Core</td>
+								<td>​AMD Turbo Core
+									<div class="tech">
+										Описание технологии
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -248,7 +323,11 @@
 								<td>✓</td>
 							</tr>
 							<tr>
-								<td>Технология AMD Start Now4</td>
+								<td>Технология AMD Start Now4
+									<div class="tech">
+										Описание технологии AMD Start Now4
+									</div>
+								</td>
 								<td>✓</td>
 								<td>✓</td>
 								<td>✓</td>
@@ -258,11 +337,11 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
-		</div>
-		<div class="section" id="section4">
-			<div class="container">
-				<table>
+			<div class="slide" data-anchor="slide3">
+				<div class="container">
+					<table>
 						<thead>
 							<tr>
 								<td>
@@ -360,79 +439,96 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
 		</div>
-		<div class="section gen6" id="section5">
+		<div class="section gen6" id="section3">
 			<div class="container">
 				<h2>Гибридные процессоры 6-го поколения</h2>
 				<p>
 					Гибридные процессоры AMD А-серии без проблем справляются с онлайн-играми… на ноутбуке. А это значит, что и другие задачи им по плечу.
 				</p>
 				<div class="col-md-4">
-					<button class="more">Онлайн-игры</button>
+					<a href="#gen6info">
+						<button class="more">Онлайн-игры</button>
+					</a>
 				</div>
 				<div class="col-md-4">
-					<button class="more">Видео и стриминг</button>
+					<a href="#gen6info">
+						<button class="more">Видео и стриминг</button>
+					</a>
 				</div>
 				<div class="col-md-4">
-					<button class="more">Инновации</button>
+					<a href="#gen6info">
+						<button class="more">Инновации</button>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="section gen7feat" id="section6">
+		<div class="section gen7feat" id="section4">
 			<div class="container">
-				<div class="col-md-4">
-									<img src="img/online.png" />
-									<h4>Потрясающие онлайн-игры</h4>
-									<ul>
-										<li>
-											Качественные игры дома и в пути благодаря архитектуре Graphics Core Next и поддержке конфигураций с несколькими видеокартами и программных интерфейсов DirectX™ 12, Vulkan​™ и Mantle
-										</li>
-										<li>
-											Технология двойной графики AMD + видеокарта Radeon™ = существенное увеличение производительности графики.
-										</li>
-										<li>
-											Никаких разрывов изображений и подтормаживаний с технологией AMD FreeSync™.
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-4">
-									<img src="img/entertainment.png" />
-									<h4>Интернет-развлечения высшего класса</h4>
-									<ul>
-										<li>
-											​Более плавное воспроизведение качественного видеоконтента из Интернета (даже в формате Ultra HD!)
-										</li>
-										<li>
-											​Увеличение разрешения и повышение качества видео на современных дисплеях Ultra HD
-										</li>
-										<li>
-											Плавное воспроизведение домашнего видео и быстрая буферизация видео на интернет-сайтах
-										</li>
-										<li>
-											По сравнению с предыдущим поколением гибридных процессоров скорость перекодировки видео выросла в 3,5 раза
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-4">
-									<img src="img/innovative.png" />
-									<h4>Инновационные вычисления</h4>
-									<ul>
-										<li>
-											Самые передовые технологии энергосбережения AMD: в требовательных к ресурсам приложениях батарея работает на 35% дольше.</li>
-										<li>
-											Приложения следующего поколения для тегирования и сортировки лиц в видеофайлах, инновационные интерактивные и другие возможности.
-										</li>
-										<li>
-											Windows® будет работать как часы: функции безопасности реализованы на уровне процессора, имеются возможности беспроводной трансляции с экрана и усовершенствованные функции отображения, а также передовые возможности системной памяти.
-										</li>
-									</ul>
-								</div>
+				<nav class="slider-nav">
+					<a class="nav__item2 active2" href="#gen6info/slide1">Описание</a>
+					<a>|</a>
+					<a class="nav__item2" href="#gen6info/slide2">Технологии</a>
+					<a>|</a>
+					<a class="nav__item2" href="#gen6info/slide3">Характеристики</a>
+				</nav>
 			</div>
-		</div>
-		<div class="section" id="section7">
-			<div class="container">
-				<table class="technologies">
+			<div class="slide active" data-anchor="slide1">
+				<div class="container">
+					<div class="col-md-4">
+						<img src="img/online.png" />
+						<h4>Онлайн-игры</h4>
+						<ul>
+							<li>
+								Играйте дома и в пути благодаря архитектуре Graphics Core Next и поддержке программных интерфейсов DirectX® 12 и Vulkan™.
+							</li>
+							<li>
+								Повысьте производительность в играх c технологией Двойной графики AMD.
+							</li>
+							<li>
+								Забудьте о подтормаживаниях картинки и разрывах изображения с технологией AMD FreeSync™.
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="img/entertainment.png" />
+						<h4>Видео и стриминг</h4>
+						<ul>
+							<li>
+								​Транслируйте видео в разрешении до Ultra HD.
+							</li>
+							<li>
+								​Увеличивайте разрешение и повышайте качество видео для современных Ultra HD телевизоров
+							</li>
+							<li>
+								Наслаждайтесь снятыми видео без дрожания картинки и быстрой предзагрузкой видео на интернет-сайтах.
+							</li>
+							<li>
+								Оцените в 3,5 раза выросшую скорость перекодировки видео по сравнению с предыдущим поколением гибридных процессоров.
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<img src="img/innovative.png" />
+						<h4>Инновации</h4>
+						<ul>
+							<li>
+								Пользуйтесь технологиями энергосбережения AMD: в ресурсоемких приложениях батарея работает на 35% дольше.</li>
+							<li>
+								Попробуйте приложения следующего поколения для определения и сортировки лиц в видеофайлах, а также другие возможности.
+							</li>
+							<li>
+								Испытайте новые технологии, с которыми Windows® работает как часы: функции безопасности, реализованные на уровне процессора, беспроводную трансляцию с экрана и усовершенствованные функции отображения, а также алгоритм распределения системной памяти.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="slide" data-anchor="slide2">
+				<div class="container">
+					<table class="technologies">
 						<thead>
 							<tr>
 								<td>ТЕХНОЛОГИЯ</td>
@@ -546,11 +642,11 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
-		</div>
-		<div class="section" id="section8">
-			<div class="container">
-				<table>
+			<div class="slide" data-anchor="slide3">
+				<div class="container">
+					<table>
 						<thead>
 							<tr>
 								<td>
@@ -691,13 +787,15 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 			</div>
 		</div>
-		<div class="section game" id="section9">
+		<div class="section game" id="section5">
 			<div class="container">
 				<h2>Мы в игре</h2>
 				<p>
-					Оцените впечатляющую производительность решений AMD в популярных онлайн-играх. Получите код на игру Dirt 3 в подарок за покупку акционных ноутбуков на базе процессоров A9, A10, A12 И FX в магазинах сети ДНС в период с 1 по 30 сентября 2016 года, отправив чек через форму ниже.
+					Оцените впечатляющую производительность решений AMD в популярных онлайн-играх. Получите код на игру Dirt 3 в подарок за покупку акционных ноутбуков на базе процессоров A9, A10, A12 И FX в магазинах сети ДНС в период с 1 по 30 сентября 2016 года, отправив
+					чек через форму ниже.
 				</p>
 				<button class="more">Купить ноутбук</button>
 				<button class="more">Отправить чек</button>
@@ -713,11 +811,30 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2','#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
-				anchors: ['mainscreen', 'apugen7', 'apugen7-2', 'apugen7-3', 'apugen7-4', 'apugen6', 'apugen6-2', 'apugen6-3', 'apugen6-4', 'game']
+				sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+				anchors: ['mainscreen', 'apugen7', 'gen7info', 'apugen6', 'gen6info', 'game'],
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+					$('.nav__item.active').removeClass('active');
+					$('.nav__item').eq(slideIndex).addClass('active');
+					$('.nav__item2.active2').removeClass('active2');
+					$('.nav__item2').eq(slideIndex).addClass('active2');
+				},
+				afterLoad: function(anchorLink, index) {
+					if (index != 1) {
+						$("#upbutton").fadeIn();
+					} else {
+						$("#upbutton").fadeOut();
+					}
+				}
 			});
 		});
 	</script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			alert("scroll");
+		});
+	</script>
+
 
 </body>
 

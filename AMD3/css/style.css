@@ -1,11 +1,23 @@
 @font-face {
     font-family: "NeoSansProRegular";
-    src: url("../fonts/NeoSansProRegular/NeoSansProRegular.ttf");
+    src: url("../fonts/NeoSansProRegular/NeoSansProRegular.eot");
+    src: url('../fonts/NeoSansProRegular/NeoSansProRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NeoSansProRegular/NeoSansProRegular.woff2') format('woff2'),
+         url('../fonts/NeoSansProRegular/NeoSansProRegular.woff') format('woff'),
+         url('../fonts/NeoSansProRegular/NeoSansProRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
   font-family: "NeoSansProBold";
-  src: url("../fonts/NeoSansProBold/NeoSansProBold.ttf");
+  src: url("../fonts/NeoSansProBold/NeoSansProBold.eot");
+  src: url('../fonts/NeoSansProBold/NeoSansProBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NeoSansProBold/NeoSansProBold.woff2') format('woff2'),
+       url('../fonts/NeoSansProBold/NeoSansProBold.woff') format('woff'),
+       url('../fonts/NeoSansProBold/NeoSansProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -30,7 +42,8 @@ header {
     justify-content: space-between;
 }
 
-.backtotop {
+#upbutton {
+  display: none;
   position: fixed;
   bottom: 0;
   right: calc((100vw - 1300px)/2);
@@ -40,23 +53,21 @@ header {
   padding: 20px 40px;
 }
 
-.backtotop * {
+#upbutton * {
   transform: skew(-45deg);
 }
 
-.backtotop a, .backtotop a:hover, .backtotop a:focus {
+#upbutton a, #upbutton a:hover, #upbutton a:focus {
   color: #000;
   text-decoration: none;
 }
 
 header .logo {
-  background-color: rgba(237,28,36,0.6);
-  transform: skew(45deg);
-  padding: 20px 40px;
+  padding: 15px;
 }
 
-header .logo * {
-  transform: skew(-45deg);
+header .logo img {
+  width: 320px;
 }
 
 header nav {
@@ -71,6 +82,13 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 10px 14px 0;
+}
+
+header nav ul li img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.9;
+    margin-right: 15px;
 }
 
 header nav ul li a {
@@ -95,6 +113,11 @@ header nav ul li a:link {
 header nav ul li a:focus {
     text-decoration: none;
     color: #000;
+}
+
+.mainscreen {
+  background:url('../img/mainbg.jpg');
+  background-size: cover;
 }
 
 .mainscreen h1 {
@@ -155,15 +178,20 @@ header nav ul li a:focus {
 }
 .more {
   margin-top: 30px;
-  padding: 10px 30px;
-  border: 2px solid #ed1c24;
-  color: #ed1c24;
-  border-radius: 20px;
+  padding: 5px 25px 5px 10px;
+  border: 0;
+  color: #fff;
   text-transform: uppercase;
-  font-size: 20px;
-  background: transparent;
+  font-size: 18px;
+  background-color: #f26621;
+  border: 4px solid #f26621;
+  background-image:  url(../img/tr.png);
+  background-position:  right 70%;
+  background-repeat: no-repeat;
+  text-decoration: none !important;
   transition: 1s;
 }
+
 
 .gen7 {
   background: url("../img/bg1.jpg");
@@ -177,20 +205,18 @@ header nav ul li a:focus {
 }
 .gen7 p {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .gen7 .more {
-  font-size: 16px;
-  text-transform: none;
   display: block;
   margin: 0 auto;
-  background: #fff;
-  opacity: 0.8;
+  font-size: 16px;
+  text-transform: none;
   margin-top: 40px;
+  text-decoration: none !important;
 }
 .more:hover {
-  color: #fff;
-  background: #ed1c24;
+  border: 4px solid #ed1c24;
 }
 .gen7feat > div {
   text-align: center;
@@ -245,6 +271,11 @@ table tbody td{
   background: url("../img/bg2.jpg");
   background-size: cover;
 }
+.gen6 .more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
 .gen6 h2 {
   font-size: 50px;
   font-family: "NeoSansProBold";
@@ -253,27 +284,18 @@ table tbody td{
 }
 .gen6 p {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
-}
-.gen6 .more {
-  font-size: 16px;
-  text-transform: none;
-  display: block;
-  margin: 0 auto;
-  background: #fff;
-  opacity: 0.8;
-  margin-top: 40px;
 }
 
 .game h2 {
   padding-bottom: 20px;
   font-family: "NeoSansProBold";
-  background:url('../img/mask.jpg');
+  background:url('../img/game.jpg');
     background-repeat:repeat-x;
     background-position:0 0;
     background-size: cover;
-    font-size:150px;
+    font-size:180px;
     line-height: 150px;
     text-transform:uppercase;
     color:transparent;
@@ -286,5 +308,60 @@ table tbody td{
 }
 .game p {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 22px;
+}
+.game button {
+  margin-right: 30px;
+}
+
+.slider-nav {
+  position: relative;
+  top: 130px;
+  width: 100%;
+  text-align: right;
+  z-index: 10000;
+}
+
+.slide {
+  margin-top: 80px;
+}
+
+.slider-nav a{
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #404040;
+  transition: 0.5s;
+  text-decoration: none !important;
+  font-family: "NeoSansProBold";
+}
+
+.slider-nav a:hover{
+  color: #ed1c24;
+}
+.nav__item.active {
+  color: #ed1c24;
+}
+.nav__item2.active2 {
+  color: #ed1c24;
+}
+a {
+  text-decoration: none !important;
+}
+.tech {
+  display: none;
+  position: absolute;
+  background: #f26621;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  bottom: 50px;
+}
+
+.technologies tbody tr td:first-child{
+  text-align: left;
+  cursor: pointer;
+}
+
+.technologies tbody tr td:first-child:hover .tech{
+  display: block;
 }
