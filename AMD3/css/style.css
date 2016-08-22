@@ -178,6 +178,9 @@ header nav ul li a:focus {
   text-decoration: none !important;
   transition: 1s;
 }
+.more:hover {
+  background-color: #ed1c24;
+}
 
 
 .gen7 {
@@ -194,17 +197,7 @@ header nav ul li a:focus {
   margin-top: 20px;
   font-size: 22px;
 }
-.gen7 .more {
-  display: block;
-  margin: 0 auto;
-  font-size: 16px;
-  text-transform: none;
-  margin-top: 40px;
-  text-decoration: none !important;
-}
-.more:hover {
-  background-color: #ed1c24;
-}
+
 .gen7feat > div {
   text-align: center;
 }
@@ -258,12 +251,7 @@ table tbody td{
   background: url("../img/bg2.jpg");
   background-size: cover;
 }
-.gen6 .more, .gen7 .more {
-  text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
-  margin-top: 40px;
-}
+
 .gen6 h2 {
   font-size: 50px;
   font-family: "NeoSansProBold";
