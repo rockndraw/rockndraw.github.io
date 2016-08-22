@@ -790,10 +790,13 @@
 				sectionsColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
 				anchors: ['mainscreen', 'apugen7', 'gen7info', 'apugen6', 'gen6info', 'game'],
 				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+					if (anchorLink == "gen7info") {
 					$('.nav__item.active').removeClass('active');
 					$('.nav__item').eq(slideIndex).addClass('active');
+				} else if (anchorLink == "gen6info") {
 					$('.nav__item2.active2').removeClass('active2');
 					$('.nav__item2').eq(slideIndex).addClass('active2');
+				}
 				},
 				afterLoad: function(anchorLink, index) {
 					if (index != 1) {
