@@ -23,13 +23,13 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#apugen7"><img src="img/gen7.png" />APU 7-го поколения</a>
+						<a href="#apugen7" class="nav1"><img src="img/gen7.png" />APU 7-го поколения</a>
 					</li>
 					<li>
-						<a href="#apugen6"><img src="img/gen6.png" />APU 6-го поколения</a>
+						<a href="#apugen6" class="nav2"><img src="img/gen6.png" />APU 6-го поколения</a>
 					</li>
 					<li>
-						<a href="#game"><img src="img/game.png" />Акция</a>
+						<a href="#game" class="nav3"><img src="img/game.png" />Акция</a>
 					</li>
 				</ul>
 			</nav>
@@ -62,21 +62,9 @@
 				<p>
 					Мы создали гибридные процессоры AMD A-серии, чтобы вы восхищались производительностью, энергоэффективностью, плавным воспроизведением HD-видео и онлайн-играми на ноутбуке.
 				</p>
-				<div class="col-md-4">
-					<a href="#gen7info">
-						<button class="more">Производительность имеет значение</button>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="#gen7info">
-						<button class="more">Лучше один раз увидеть</button>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="#gen7info">
-						<button class="more">Работайте быстрее, играйте дольше</button>
-					</a>
-				</div>
+				<a href="#gen7info">
+					<button class="more">Узнать больше</button>
+				</a>
 			</div>
 		</div>
 		<div class="section gen7feat" id="section2">
@@ -448,21 +436,9 @@
 				<p>
 					Гибридные процессоры AMD А-серии без проблем справляются с онлайн-играми… на ноутбуке. А это значит, что и другие задачи им по плечу.
 				</p>
-				<div class="col-md-4">
 					<a href="#gen6info">
-						<button class="more">Онлайн-игры</button>
+						<button class="more">Узнать больше</button>
 					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="#gen6info">
-						<button class="more">Видео и стриминг</button>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="#gen6info">
-						<button class="more">Инновации</button>
-					</a>
-				</div>
 			</div>
 		</div>
 		<div class="section gen7feat" id="section4">
@@ -825,6 +801,28 @@
 					} else {
 						$("#upbutton").fadeOut();
 					}
+
+					if ((index == 2)||(index == 3)) {
+						$(".nav1").addClass("redlink");
+						$(".nav2").removeClass("redlink");
+						$(".nav3").removeClass("redlink");
+					}
+					else if ((index == 4)||(index == 5)) {
+							$(".nav2").addClass("redlink");
+							$(".nav1").removeClass("redlink");
+							$(".nav3").removeClass("redlink");
+						}
+					else if (index == 6) {
+						$(".nav3").addClass("redlink");
+						$(".nav1").removeClass("redlink");
+						$(".nav2").removeClass("redlink");
+							}
+					else {
+						$(".nav3").removeClass("redlink");
+						$(".nav1").removeClass("redlink");
+						$(".nav2").removeClass("redlink");
+					}
+
 				}
 			});
 		});

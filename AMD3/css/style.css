@@ -1,15 +1,4 @@
 @font-face {
-    font-family: "NeoSansProRegular";
-    src: url("../fonts/NeoSansProRegular/NeoSansProRegular.eot");
-    src: url('../fonts/NeoSansProRegular/NeoSansProRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/NeoSansProRegular/NeoSansProRegular.woff2') format('woff2'),
-         url('../fonts/NeoSansProRegular/NeoSansProRegular.woff') format('woff'),
-         url('../fonts/NeoSansProRegular/NeoSansProRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
   font-family: "NeoSansProBold";
   src: url("../fonts/NeoSansProBold/NeoSansProBold.eot");
   src: url('../fonts/NeoSansProBold/NeoSansProBold.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +10,7 @@
 }
 
 body {
-    font-family: "NeoSansProRegular";
+    font-family: Arial;
 }
 div {
   box-sizing: border-box;
@@ -48,13 +37,12 @@ header {
   bottom: 0;
   right: calc((100vw - 1300px)/2);
   z-index: 1000;
-  background-color: rgba(237,28,36,0.6);
-  transform: skew(45deg);
-  padding: 20px 40px;
+  background-color: rgba(237,28,36,0.3);
+  padding: 10px 15px;
+  padding-right: 20px;
 }
 
 #upbutton * {
-  transform: skew(-45deg);
 }
 
 #upbutton a, #upbutton a:hover, #upbutton a:focus {
@@ -184,7 +172,6 @@ header nav ul li a:focus {
   text-transform: uppercase;
   font-size: 18px;
   background-color: #f26621;
-  border: 4px solid #f26621;
   background-image:  url(../img/tr.png);
   background-position:  right 70%;
   background-repeat: no-repeat;
@@ -216,7 +203,7 @@ header nav ul li a:focus {
   text-decoration: none !important;
 }
 .more:hover {
-  border: 4px solid #ed1c24;
+  background-color: #ed1c24;
 }
 .gen7feat > div {
   text-align: center;
@@ -271,7 +258,8 @@ table tbody td{
   background: url("../img/bg2.jpg");
   background-size: cover;
 }
-.gen6 .more {
+.gen6 .more, .gen7 .more {
+  text-transform: uppercase;
   display: block;
   margin: 0 auto;
   margin-top: 40px;
@@ -364,4 +352,8 @@ a {
 
 .technologies tbody tr td:first-child:hover .tech{
   display: block;
+}
+
+.redlink {
+  color: #ed1c24;
 }
