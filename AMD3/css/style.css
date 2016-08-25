@@ -258,7 +258,7 @@ table tbody td{
   color: #f26621;
  -webkit-text-fill-color: transparent;
  background: -webkit-linear-gradient(transparent, transparent),
-             url('../img/mask.jpg') repeat;
+             url('../img/game.jpg') repeat;
  -webkit-background-clip: text;
     font-size:180px;
     line-height: 150px;
