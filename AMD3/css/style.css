@@ -27,8 +27,12 @@ header {
 .wide {
     margin: 0 auto;
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #upbutton {
@@ -85,6 +89,7 @@ header nav ul li a {
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
+    -webkit-transition: 0.7s;
     transition: 0.7s;
 }
 
@@ -111,23 +116,20 @@ header nav ul li a:focus {
 .mainscreen h1 {
   padding-bottom: 20px;
   font-family: "NeoSansProBold";
-  background:url('../img/mask.jpg');
-    background-repeat:repeat-x;
-    background-position:0 0;
+  color: #f26621;
+ -webkit-text-fill-color: transparent;
+ background: -webkit-linear-gradient(transparent, transparent),
+             url('../img/mask.jpg') repeat;
+ -webkit-background-clip: text;
     font-size:70px;
     text-transform:uppercase;
-    color:transparent;
     -webkit-font-smoothing:antialiased;
     -webkit-background-clip:text;
-    -moz-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color:transparent;
     margin:0;
     -webkit-animation:Background 30s linear infinite;
-    -moz-animation:Background 30s linear infinite;
-    -ms-animation:Background 30s linear infinite;
-    -o-animation:Background 30s linear infinite;
-    animation:Background 30s linear infinite;
+
 }
 @keyframes Background {
     from {
@@ -138,21 +140,6 @@ header nav ul li a:focus {
     }
 }
     @-webkit-keyframes Background {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-    @-ms-keyframes Background {<     from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-    @-moz-keyframes Background {
     from {
         background-position:0 0
     }
@@ -176,6 +163,7 @@ header nav ul li a:focus {
   background-position:  right 70%;
   background-repeat: no-repeat;
   text-decoration: none !important;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 .more:hover {
@@ -267,18 +255,15 @@ table tbody td{
 .game h2 {
   padding-bottom: 20px;
   font-family: "NeoSansProBold";
-  background:url('../img/game.jpg');
-    background-repeat:repeat-x;
-    background-position:0 0;
-    background-size: cover;
+  color: #f26621;
+ -webkit-text-fill-color: transparent;
+ background: -webkit-linear-gradient(transparent, transparent),
+             url('../img/mask.jpg') repeat;
+ -webkit-background-clip: text;
     font-size:180px;
     line-height: 150px;
     text-transform:uppercase;
-    color:transparent;
     -webkit-font-smoothing:antialiased;
-    -webkit-background-clip:text;
-    -moz-background-clip:text;
-    background-clip:text;
     -webkit-text-fill-color:transparent;
     margin:0;
 }
@@ -306,6 +291,7 @@ table tbody td{
   padding: 0 10px;
   text-transform: uppercase;
   color: #404040;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
   font-family: "NeoSansProBold";
@@ -344,4 +330,135 @@ a {
 
 .redlink {
   color: #ed1c24;
+}
+
+.modal-form-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 100000;
+  display: none;
+}
+
+.modal-check {
+  padding: 30px;
+  background: #fff;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.modal-check h3 {
+  text-align: center;
+}
+.modal-check form {
+  margin-top: 35px;
+}
+
+.modal-check input[type="text"],.modal-check input[type="email"],.modal-check input[type="submit"] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  border: 1px solid #ed1c24;
+  padding: 0 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.modal-check input[type="submit"] {
+  background: #ed1c24;
+  color: #fff;
+}
+
+.fileform {
+    border: 1px solid #ed1c24;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.fileform .selectbutton {
+    background-color: #ed1c24;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 12px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+    cursor: pointer;
+}
+
+.fileform #upload{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 30px;
+    z-index:20;
+}
+
+.fileform #fileformlabel {
+float: left;
+height: 50px;
+overflow: hidden;
+padding: 10px;
+text-align: left;
+vertical-align: middle;
+width:calc(100%-140px);
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #1e1e1e;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer-social li{
+  padding-top: 20px;
+}
+
+.footer-social li a{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.footer-social li i{
+  padding-right: 10px;
+}
+
+.footer .copyright{
+  font-size: 14px;
+  text-align: center;
+  color: #f0f0f0;
+  padding-top: 10px;
+}
+
+.footer .copyright a{
+  font-size: 14px;
+  color: #ed1c24;
+  font-family: "NeoSansProBold";
 }

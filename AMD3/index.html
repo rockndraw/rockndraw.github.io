@@ -3,10 +3,12 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AMD</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 </head>
@@ -35,6 +37,24 @@
 			</nav>
 		</div>
 	</header>
+
+	<div class="modal-form-container">
+		<div class="modal-check">
+			<h3>ОТПРАВИТЬ ЧЕК</h3>
+			<form>
+					<input type="text" placeholder="Ваше Имя" />
+					<input type="email" placeholder="Ваш E-mail" />
+
+					<div class="fileform">
+						<div id="fileformlabel"></div>
+						<div class="selectbutton">Выбрать файл</div>
+						<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+					</div>
+					<br />
+					<input type="submit" value="ОТПРАВИТЬ" />
+				</form>
+		</div>
+	</div>
 
 	<div class="backtotop" id="upbutton">
 		<a href="#mainscreen"><i class="fa fa-arrow-up fa-2x"></i></a>
@@ -80,7 +100,7 @@
 
 			<div class="slide active" data-anchor="slide1">
 				<div class="container">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-12 col-xs-12">
 						<img src="img/performance.png" />
 						<h3>Производительность имеет значение</h3>
 						<ul>
@@ -95,7 +115,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-12 col-xs-12">
 						<img src="img/visual.png" />
 						<h3>Лучше один раз увидеть</h3>
 						<ul>
@@ -110,7 +130,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-12 col-xs-12">
 						<img src="img/battery.png" />
 						<h3>Работайте быстрее, играйте дольше</h3>
 						<ul>
@@ -128,305 +148,310 @@
 			</div>
 			<div class="slide" data-anchor="slide2">
 				<div class="container">
-					<table class="technologies">
-						<thead>
-							<tr>
-								<td>ТЕХНОЛОГИЯ</td>
-								<td>AMD FX™</td>
-								<td>AMD A12</td>
-								<td>AMD A10</td>
-								<td>AMD A9​</td>
-								<td>AMD A6​</td>
-								<td>AMD E2​</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Vulkan™ и DirectX®12 с поддержкой нескольких адаптеров
-									<div class="tech">
-										Описание технологии Vulkan™ и DirectX®12
-									</div>
-								</td>
-								<td>✓</td>
-								<td></td>
-								<td></td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>Управление частотой кадров
-									<div class="tech">
-										Описание технологии Управление частотой кадров
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>Технология AMD Eyefinity
-									<div class="tech">
-										Описание технологии AMD Eyefinity
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td></td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>Двойная Графика AMD
-									<div class="tech">
-										Описание технологии Двойная Графика AMD
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved
-									<div class="tech">
-										Описание технологии AMD Gaming Evolved
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>Виртуальное сверхвысокое разрешение
-									<div class="tech">
-										Описание технологии Виртуальное сверхвысокое разрешение
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>​Технология AMD FreeSync™
-									<div class="tech">
-										Описание технологии AMD FreeSync™
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>​Декодирование потокового воспроизведения VP9
-									<div class="tech">
-										Описание технологии Декодирование потокового воспроизведения VP9
-									</div>
-								</td>
-								<td>​FHD</td>
-								<td>​FHD</td>
-								<td>​FHD</td>
-								<td>​HD</td>
-								<td>​HD</td>
-								<td>​HD</td>
-							</tr>
-							<tr>
-								<td>Встроенная поддержка декодирования HEVC
-									<div class="tech">
-										Описание технологии Встроенная поддержка декодирования HEVC
-									</div>
-								</td>
-								<td>UHD</td>
-								<td>UHD</td>
-								<td>UHD</td>
-								<td>​FHD</td>
-								<td>​FHD</td>
-								<td>​FHD</td>
-							</tr>
-							<tr>
-								<td>​AMD Radeon Graphics Core Next
-									<div class="tech">
-										Описание технологии ​AMD Radeon Graphics Core Next
-									</div>
-								</td>
-								<td>​R7</td>
-								<td>​R7</td>
-								<td>​R5</td>
-								<td>​R5</td>
-								<td>​R4</td>
-								<td>​R2</td>
-							</tr>
-							<tr>
-								<td>​AMD Perfect Picture + AMD Steady Video
-									<div class="tech">
-										Описание технологии AMD Perfect Picture + AMD Steady Video
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Встроенная поддержка дисплеев с разрешением 4K
-									<div class="tech">
-										Описание технологии
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>​AMD Turbo Core
-									<div class="tech">
-										Описание технологии
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Технология AMD Start Now4
-									<div class="tech">
-										Описание технологии AMD Start Now4
-									</div>
-								</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-container">
+						<table class="technologies">
+							<thead>
+								<tr>
+									<td>ТЕХНОЛОГИЯ</td>
+									<td>AMD FX™</td>
+									<td>AMD A12</td>
+									<td>AMD A10</td>
+									<td>AMD A9​</td>
+									<td>AMD A6​</td>
+									<td>AMD E2​</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Vulkan™ и DirectX®12 с поддержкой нескольких адаптеров
+										<div class="tech">
+											Описание технологии Vulkan™ и DirectX®12
+										</div>
+									</td>
+									<td>✓</td>
+									<td></td>
+									<td></td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>Управление частотой кадров
+										<div class="tech">
+											Описание технологии Управление частотой кадров
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>Технология AMD Eyefinity
+										<div class="tech">
+											Описание технологии AMD Eyefinity
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td></td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>Двойная Графика AMD
+										<div class="tech">
+											Описание технологии Двойная Графика AMD
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved
+										<div class="tech">
+											Описание технологии AMD Gaming Evolved
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>Виртуальное сверхвысокое разрешение
+										<div class="tech">
+											Описание технологии Виртуальное сверхвысокое разрешение
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>​Технология AMD FreeSync™
+										<div class="tech">
+											Описание технологии AMD FreeSync™
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>​Декодирование потокового воспроизведения VP9
+										<div class="tech">
+											Описание технологии Декодирование потокового воспроизведения VP9
+										</div>
+									</td>
+									<td>​FHD</td>
+									<td>​FHD</td>
+									<td>​FHD</td>
+									<td>​HD</td>
+									<td>​HD</td>
+									<td>​HD</td>
+								</tr>
+								<tr>
+									<td>Встроенная поддержка декодирования HEVC
+										<div class="tech">
+											Описание технологии Встроенная поддержка декодирования HEVC
+										</div>
+									</td>
+									<td>UHD</td>
+									<td>UHD</td>
+									<td>UHD</td>
+									<td>​FHD</td>
+									<td>​FHD</td>
+									<td>​FHD</td>
+								</tr>
+								<tr>
+									<td>​AMD Radeon Graphics Core Next
+										<div class="tech">
+											Описание технологии ​AMD Radeon Graphics Core Next
+										</div>
+									</td>
+									<td>​R7</td>
+									<td>​R7</td>
+									<td>​R5</td>
+									<td>​R5</td>
+									<td>​R4</td>
+									<td>​R2</td>
+								</tr>
+								<tr>
+									<td>​AMD Perfect Picture + AMD Steady Video
+										<div class="tech">
+											Описание технологии AMD Perfect Picture + AMD Steady Video
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>Встроенная поддержка дисплеев с разрешением 4K
+										<div class="tech">
+											Описание технологии
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>​AMD Turbo Core
+										<div class="tech">
+											Описание технологии
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>Технология AMD Start Now4
+										<div class="tech">
+											Описание технологии AMD Start Now4
+										</div>
+									</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 				</div>
 			</div>
 			<div class="slide" data-anchor="slide3">
 				<div class="container">
-					<table>
-						<thead>
-							<tr>
-								<td>
-									Модель
-								</td>
-								<td>
-									Графика Radeon
-								</td>
-								<td>
-									Расчетная тепловая мощность
-								</td>
-								<td>
-									Количество ядер ЦП
-								</td>
-								<td>
-									Частота ЦП (максимальная/базовая)
-								</td>
-								<td>
-									Кэш-память второго уровня
-								</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>FX-9830P</td>
-								<td>R7</td>
-								<td>25W-45W</td>
-								<td>4</td>
-								<td>3.7 / 3.0 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>FX-9800P</td>
-								<td>R7</td>
-								<td>12W-15W</td>
-								<td>4</td>
-								<td>3.6 / 2.7 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A12-9730P</td>
-								<td>R7</td>
-								<td>25W-45W</td>
-								<td>4</td>
-								<td>3.5 / 2.8 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A12-9700P</td>
-								<td>R7</td>
-								<td>12W-15W</td>
-								<td>4</td>
-								<td>3.4 / 2.5 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A10-9630P</td>
-								<td>R5</td>
-								<td>25W-45W</td>
-								<td>4</td>
-								<td>3.3 / 2.6 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A10-9600P</td>
-								<td>R5</td>
-								<td>12W-15W</td>
-								<td>4</td>
-								<td>3.3 / 2.4 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A9-9410</td>
-								<td>R5</td>
-								<td>10-25W</td>
-								<td>2</td>
-								<td>3.5 / 2.9GHz</td>
-								<td>1MB</td>
-							</tr>
-							<tr>
-								<td>A6-9210</td>
-								<td>R4</td>
-								<td>10-15W</td>
-								<td>2</td>
-								<td>2.8 / 2.4GHz</td>
-								<td>1MB</td>
-							</tr>
-							<tr>
-								<td>E2-9010</td>
-								<td>R2</td>
-								<td>10-15W</td>
-								<td>2</td>
-								<td>2.2 / 2.0GHz</td>
-								<td>1MB</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<td>
+										Модель
+									</td>
+									<td>
+										Графика Radeon
+									</td>
+									<td>
+										Расчетная тепловая мощность
+									</td>
+									<td>
+										Количество ядер ЦП
+									</td>
+									<td>
+										Частота ЦП (максимальная/базовая)
+									</td>
+									<td>
+										Кэш-память второго уровня
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>FX-9830P</td>
+									<td>R7</td>
+									<td>25W-45W</td>
+									<td>4</td>
+									<td>3.7 / 3.0 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>FX-9800P</td>
+									<td>R7</td>
+									<td>12W-15W</td>
+									<td>4</td>
+									<td>3.6 / 2.7 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A12-9730P</td>
+									<td>R7</td>
+									<td>25W-45W</td>
+									<td>4</td>
+									<td>3.5 / 2.8 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A12-9700P</td>
+									<td>R7</td>
+									<td>12W-15W</td>
+									<td>4</td>
+									<td>3.4 / 2.5 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A10-9630P</td>
+									<td>R5</td>
+									<td>25W-45W</td>
+									<td>4</td>
+									<td>3.3 / 2.6 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A10-9600P</td>
+									<td>R5</td>
+									<td>12W-15W</td>
+									<td>4</td>
+									<td>3.3 / 2.4 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A9-9410</td>
+									<td>R5</td>
+									<td>10-25W</td>
+									<td>2</td>
+									<td>3.5 / 2.9GHz</td>
+									<td>1MB</td>
+								</tr>
+								<tr>
+									<td>A6-9210</td>
+									<td>R4</td>
+									<td>10-15W</td>
+									<td>2</td>
+									<td>2.8 / 2.4GHz</td>
+									<td>1MB</td>
+								</tr>
+								<tr>
+									<td>E2-9010</td>
+									<td>R2</td>
+									<td>10-15W</td>
+									<td>2</td>
+									<td>2.2 / 2.0GHz</td>
+									<td>1MB</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -504,265 +529,273 @@
 			</div>
 			<div class="slide" data-anchor="slide2">
 				<div class="container">
-					<table class="technologies">
-						<thead>
-							<tr>
-								<td>ТЕХНОЛОГИЯ</td>
-								<td>AMD FX™</td>
-								<td>AMD A10</td>
-								<td>AMD A8</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>DIRECTX®12 + MANTLE EXPLICIT MULTIADAPTER (ГИБРИДНЫЙ ПРОЦЕССОР + ДИСКРЕТНЫЙ ГРАФИЧЕСКИЙ ПРОЦЕССОР)</td>
-								<td>✓</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>ТЕХНОЛОГИЯ AMD EYEFINITY</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>​</td>
-							</tr>
-							<tr>
-								<td>ТЕХНОЛОГИЯ AMD TRUEAUDIO</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>AMD LOOKING GLASS</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>ДВОЙНАЯ ГРАФИКА AMD</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>​УСКОРЕННОЕ ДЕКОДИРОВАНИЕ ФОРМАТА HEVC</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>УПРАВЛЕНИЕ ЖЕСТАМИ AMD</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>AMD TURBO CORE</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>ЯДРА/ВЫЧИСЛИТЕЛЬНЫЕ ЯДРА*</td>
-								<td>12 (4C+8G)</td>
-								<td>10 (4C+6G)</td>
-								<td>10 (4C+6G)</td>
-							</tr>
-							<tr>
-								<td>ВИДЕОКАРТА AMD RADEON™</td>
-								<td>R7</td>
-								<td>R6/R8 Extreme</td>
-								<td>R6</td>
-							</tr>
-							<tr>
-								<td>ТЕХНОЛОГИЯ AMD QUICK STREAM</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>AMD PERFECT PICTURE + AMD STEADY VIDEO</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>AMD WIRELESS DISPLAY (MIRACAST)</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>ТЕХНОЛОГИЯ AMD START NOW</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>ТЕХНОЛОГИЯ AMD ENDURO™</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<td>AMD SECURE PROCESSOR + ARM® TRUSTZONE®</td>
-								<td>✓</td>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-container">
+						<table class="technologies">
+							<thead>
+								<tr>
+									<td>ТЕХНОЛОГИЯ</td>
+									<td>AMD FX™</td>
+									<td>AMD A10</td>
+									<td>AMD A8</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>DIRECTX®12 + MANTLE EXPLICIT MULTIADAPTER (ГИБРИДНЫЙ ПРОЦЕССОР + ДИСКРЕТНЫЙ ГРАФИЧЕСКИЙ ПРОЦЕССОР)</td>
+									<td>✓</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>ТЕХНОЛОГИЯ AMD EYEFINITY</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>​</td>
+								</tr>
+								<tr>
+									<td>ТЕХНОЛОГИЯ AMD TRUEAUDIO</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>AMD LOOKING GLASS</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>Запись и воспроизведение в реальном времени с клиентом AMD Gaming Evolved</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>ДВОЙНАЯ ГРАФИКА AMD</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>​УСКОРЕННОЕ ДЕКОДИРОВАНИЕ ФОРМАТА HEVC</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>УПРАВЛЕНИЕ ЖЕСТАМИ AMD</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>AMD TURBO CORE</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>ЯДРА/ВЫЧИСЛИТЕЛЬНЫЕ ЯДРА*</td>
+									<td>12 (4C+8G)</td>
+									<td>10 (4C+6G)</td>
+									<td>10 (4C+6G)</td>
+								</tr>
+								<tr>
+									<td>ВИДЕОКАРТА AMD RADEON™</td>
+									<td>R7</td>
+									<td>R6/R8 Extreme</td>
+									<td>R6</td>
+								</tr>
+								<tr>
+									<td>ТЕХНОЛОГИЯ AMD QUICK STREAM</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>AMD PERFECT PICTURE + AMD STEADY VIDEO</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>AMD WIRELESS DISPLAY (MIRACAST)</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>ТЕХНОЛОГИЯ AMD START NOW</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>ТЕХНОЛОГИЯ AMD ENDURO™</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+								<tr>
+									<td>AMD SECURE PROCESSOR + ARM® TRUSTZONE®</td>
+									<td>✓</td>
+									<td>✓</td>
+									<td>✓</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 			<div class="slide" data-anchor="slide3">
 				<div class="container">
-					<table>
-						<thead>
-							<tr>
-								<td>
-									Модель
-								</td>
-								<td>
-									Графика Radeon
-								</td>
-								<td>
-									Расчетная тепловая мощность
-								</td>
-								<td>
-									Количество ядер ЦП
-								</td>
-								<td>
-									Количество вычислительных ядер
-								</td>
-								<td>
-									Частота ЦП
-								</td>
-								<td>
-									Кэш-память второго уровня
-								</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>FX-8800P</td>
-								<td>R7</td>
-								<td>12W-35W</td>
-								<td>4</td>
-								<td>12 (4C+8G)</td>
-								<td>до 3.4 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A10-8780P Extreme
-								</td>
-								<td>R8</td>
-								<td>15W</td>
-								<td>4</td>
-								<td>12 (4C+8G)</td>
-								<td>до 3.3 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A10-8700P</td>
-								<td>R6</td>
-								<td>12W-35W</td>
-								<td>10 (4C+6G)</td>
-								<td>4</td>
-								<td>до 3.2 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A8-8600P</td>
-								<td>R6</td>
-								<td>12W-35W</td>
-								<td>10 (4C+6G)</td>
-								<td>4</td>
-								<td>до 3.0 GHz</td>
-								<td>2MB</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<td>
+										Модель
+									</td>
+									<td>
+										Графика Radeon
+									</td>
+									<td>
+										Расчетная тепловая мощность
+									</td>
+									<td>
+										Количество ядер ЦП
+									</td>
+									<td>
+										Количество вычислительных ядер
+									</td>
+									<td>
+										Частота ЦП
+									</td>
+									<td>
+										Кэш-память второго уровня
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>FX-8800P</td>
+									<td>R7</td>
+									<td>12W-35W</td>
+									<td>4</td>
+									<td>12 (4C+8G)</td>
+									<td>до 3.4 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A10-8780P Extreme
+									</td>
+									<td>R8</td>
+									<td>15W</td>
+									<td>4</td>
+									<td>12 (4C+8G)</td>
+									<td>до 3.3 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A10-8700P</td>
+									<td>R6</td>
+									<td>12W-35W</td>
+									<td>10 (4C+6G)</td>
+									<td>4</td>
+									<td>до 3.2 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A8-8600P</td>
+									<td>R6</td>
+									<td>12W-35W</td>
+									<td>10 (4C+6G)</td>
+									<td>4</td>
+									<td>до 3.0 GHz</td>
+									<td>2MB</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 					<h3>Другие процессоры AMD для ноутбуков</h3>
-					<table>
-						<thead>
-							<tr>
-								<td>
-									Модель
-								</td>
-								<td>
-									Графика Radeon
-								</td>
-								<td>
-									Расчетная тепловая мощность
-								</td>
-								<td>
-									Количество ядер ЦП
-								</td>
-								<td>
-									Количество вычислительных ядер
-								</td>
-								<td>
-									Частота ЦП
-								</td>
-								<td>
-									Кэш-память второго уровня
-								</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>A8-7410</td>
-								<td>R5</td>
-								<td>12W-35W</td>
-								<td>4</td>
-								<td>-</td>
-								<td>до 2.5 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A6-7310</td>
-								<td>R4</td>
-								<td>12-25W</td>
-								<td>4</td>
-								<td>-</td>
-								<td>до 2.4 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>A4-7210</td>
-								<td>R3</td>
-								<td>12W-25W</td>
-								<td>-</td>
-								<td>4</td>
-								<td>до 2.2 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>E2-7110</td>
-								<td>R2</td>
-								<td>12W-15W</td>
-								<td>-</td>
-								<td>4</td>
-								<td>до 1.8 GHz</td>
-								<td>2MB</td>
-							</tr>
-							<tr>
-								<td>E1-7010</td>
-								<td>R2</td>
-								<td>10W</td>
-								<td>-</td>
-								<td>2</td>
-								<td>до 1.5 GHz</td>
-								<td>1MB</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<td>
+										Модель
+									</td>
+									<td>
+										Графика Radeon
+									</td>
+									<td>
+										Расчетная тепловая мощность
+									</td>
+									<td>
+										Количество ядер ЦП
+									</td>
+									<td>
+										Количество вычислительных ядер
+									</td>
+									<td>
+										Частота ЦП
+									</td>
+									<td>
+										Кэш-память второго уровня
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>A8-7410</td>
+									<td>R5</td>
+									<td>12W-35W</td>
+									<td>4</td>
+									<td>-</td>
+									<td>до 2.5 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A6-7310</td>
+									<td>R4</td>
+									<td>12-25W</td>
+									<td>4</td>
+									<td>-</td>
+									<td>до 2.4 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>A4-7210</td>
+									<td>R3</td>
+									<td>12W-25W</td>
+									<td>-</td>
+									<td>4</td>
+									<td>до 2.2 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>E2-7110</td>
+									<td>R2</td>
+									<td>12W-15W</td>
+									<td>-</td>
+									<td>4</td>
+									<td>до 1.8 GHz</td>
+									<td>2MB</td>
+								</tr>
+								<tr>
+									<td>E1-7010</td>
+									<td>R2</td>
+									<td>10W</td>
+									<td>-</td>
+									<td>2</td>
+									<td>до 1.5 GHz</td>
+									<td>1MB</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -774,15 +807,27 @@
 					чек через форму ниже.
 				</p>
 				<button class="more">Купить ноутбук</button>
-				<button class="more">Отправить чек</button>
+				<button class="more" id="check-button">Отправить чек</button>
+			</div>
+			<div class="footer">
+				<ul class="container footer-social">
+					<li><a href="https://new.vk.com/amdrussia" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i><span>вконтакте</span></a></li>
+					<li><a href="https://www.facebook.com/AMD/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span>facebook</span></a></li>
+					<li><a href="https://twitter.com/amd" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span>twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/company/amd" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i><span>linkedin</span></a></li>
+					<li><a href="https://www.youtube.com/user/amd?sub_confirmation=1" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i><span>youtube</span></a></li>
+				</ul>
+				<div class="copyright container">Сайт разработан <a href="rockndraw.ru">студией Rock'n'Draw</a></div>
 			</div>
 		</div>
+
 
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -826,8 +871,16 @@
 						$(".nav2").removeClass("redlink");
 					}
 
-				}
+				},
+				responsiveWidth: 1100
 			});
+		});
+	</script>
+	<script>
+		$("#check-button").click(function(){$(".modal-form-container").fadeIn();});
+		$(".modal-form-container").click(function(){
+			if ($(event.target).closest(".modal-check").length) return;
+			$(".modal-form-container").fadeOut();
 		});
 	</script>
 

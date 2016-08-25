@@ -1,0 +1,103 @@
+@media only screen and (max-width:1100px) {
+div {
+  overflow: hidden;
+}
+header {
+  display: flex;
+}
+header .logo {
+
+}
+header .logo img {
+  width: 250px;
+}
+header nav {
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul{
+  padding: 0;
+  margin: 0;
+}
+header nav ul li{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+header nav ul li a{
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+header nav img{
+  padding: 0;
+  margin: 0;
+}
+.mainscreen {
+  padding-top: 100px;
+}
+.mainscreen h1{
+  font-size: 40px;
+}
+.more {
+  margin-bottom: 40px;
+}
+.gen7, .gen6 {
+  height:auto;
+}
+.gen7 h2, .gen6 h2 {
+  font-size: 35px;
+}
+.slider-nav {
+  position: static;
+  text-align: center;
+  margin-top: 20px;
+}
+.slider-nav a{
+  font-size: 13px;
+  padding: 0 3px;
+}
+.slide {
+  margin-top: 40px;
+  height:auto;
+}
+.section, .fp-tableCell {
+  height: auto !important;
+}
+.gen7feat table {
+  width: 100% !important;
+  overflow: auto !important;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+h2 {
+  padding-top: 30px;
+}
+.game {
+  padding-bottom: 140px;
+}
+.game h2 {
+  font-size: 100px;
+  text-align: center;
+  line-height: 110px;
+}
+
+.game .more {
+  margin: 0;
+  margin-top: 15px;
+}
+
+.footer-social li a{
+  font-size: 0;
+}
+
+.footer-social li a i{
+  font-size: 16px;
+}
+
+
+}
