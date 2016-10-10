@@ -5,15 +5,8 @@
     background-size: cover;
 }
 
-.choose-section{
-    width: 100%;
-    height:100%;
-    background: url(../img/k1.jpg);
-    background-size: cover;
-}
-
 .korp{
-    fill:rgba(255,255,255,.2);
+    fill:rgba(255,255,255,.4);
     stroke:#fff;
     stroke-miterlimit:10;
     transition: 0.7s;
@@ -32,6 +25,7 @@ svg .korp:hover{
 
     .choose-section{
         background: url(../img/k1.jpg);
+        background-size: contain;
     }
 }
 
@@ -53,6 +47,26 @@ svg .korp:hover{
 .choose-korpus__marker--marker3 {
     top: 20%;
     left: 37%;
+}
+
+.choose-korpus__marker--marker1-1 {
+    top: 30%;
+    left: 65%;
+}
+
+.choose-korpus__marker--marker1-2 {
+    top: 50%;
+    left: 53%;
+}
+
+.choose-korpus__marker--marker1-3 {
+    top: 30%;
+    left: 41%;
+}
+
+.choose-korpus__marker--marker1-4 {
+    top: 50%;
+    left: 30%;
 }
 
 .pin {
@@ -110,6 +124,18 @@ svg .korp:hover{
 }
 .choose-korpus__marker--marker3 .pin:after{
     content: '3';
+}
+.choose-korpus__marker--marker1-1 .pin:after{
+    content: '1';
+}
+.choose-korpus__marker--marker1-2 .pin:after{
+    content: '2';
+}
+.choose-korpus__marker--marker1-3 .pin:after{
+    content: '3';
+}
+.choose-korpus__marker--marker1-4 .pin:after{
+    content: '4';
 }
 .pulse {
     background: rgba(0,0,0,0.2);
@@ -271,6 +297,7 @@ svg .korp:hover{
   top: -20px;
   left: 30px;
   opacity: .9;
+  display: none;
 }
 
 .korp-table__caption {
@@ -339,8 +366,4 @@ background: #cc4837;
 
 .korp-table__item span.numb{
     font-size: 30px;
-}
-
-.pagewrapper, .slider, .slider__slide{
-    height: auto;
 }
