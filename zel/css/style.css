@@ -104,8 +104,35 @@ body{
     top: 40px;
 }
 
+.top-link--korpus{
+    top: 150px;
+}
+
+.top-link--korpus span{
+    font-size: 36px;
+    display: block;
+    margin-top: -10px;
+}
+
+.top-link--korpus:hover{
+    top: 152px;
+    background: rgba(212,87,67,.85);
+}
+
 .bottom-link{
     bottom: 100px;
+}
+
+.bottom-link--rotate{
+    right: 200px;
+    top: 50px;
+    border-radius: 50%;
+    background: rgba(212,87,67,.85);
+    border: 4px solid #fff;
+}
+
+.bottom-link--rotate:hover{
+    top: 52px;
 }
 
 .pagewrapper, .slider, .slider__slide{

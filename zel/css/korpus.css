@@ -5,11 +5,40 @@
     background-size: cover;
 }
 
+.choose-section1{
+    background: url(../img/k1.jpg);
+    background-size: cover;
+}
+
+.choose-section1-2{
+    background: url(../img/k1-2.jpg);
+    background-size: cover;
+}
+
+.choose-section3{
+    background: url(../img/k3.jpg);
+    background-size: cover;
+}
+
+.choose-section3-2{
+    background: url(../img/k3-2.jpg);
+    background-size: cover;
+}
+
+.choose-section2{
+    background: url(../img/k2.jpg);
+    background-size: cover;
+}
+
+.choose-section3-2{
+    background: url(../img/k2-2.jpg);
+    background-size: cover;
+}
+
 .korp{
-    fill:rgba(255,255,255,.4);
+    fill:rgba(255,255,255,.3);
     stroke:#fff;
     stroke-miterlimit:10;
-    transition: 0.7s;
 }
 
 svg .korp:hover{
@@ -23,8 +52,33 @@ svg .korp:hover{
         background-size: contain;
     }
 
-    .choose-section{
-        background: url(../img/k1.jpg);
+    .choose-section1{
+        background: url(../img/k1.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .choose-section1-2{
+        background: url(../img/k1-2.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .choose-section3{
+        background: url(../img/k3.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .choose-section3-2{
+        background: url(../img/k3-2.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .choose-section2{
+        background: url(../img/k2.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .choose-section2-2{
+        background: url(../img/k2-2.jpg) no-repeat;
         background-size: contain;
     }
 }
@@ -34,42 +88,127 @@ svg .korp:hover{
     opacity: .8;
 }
 
+.korp-table {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .choose-korpus__marker--marker1 {
     top: 60%;
     left: 24%;
 }
 
 .choose-korpus__marker--marker2 {
-    top: 60%;
-    left: 57%;
-}
-
-.choose-korpus__marker--marker3 {
     top: 20%;
     left: 37%;
 }
 
+.choose-korpus__marker--marker3 {
+    top: 60%;
+    left: 57%;
+}
+
 .choose-korpus__marker--marker1-1 {
-    top: 30%;
+    top: 35%;
     left: 65%;
 }
 
 .choose-korpus__marker--marker1-2 {
-    top: 50%;
+    top: 55%;
     left: 53%;
 }
 
 .choose-korpus__marker--marker1-3 {
-    top: 30%;
+    top: 35%;
     left: 41%;
 }
 
 .choose-korpus__marker--marker1-4 {
-    top: 50%;
+    top: 55%;
     left: 30%;
 }
 
+.choose-korpus__marker--marker1-5 {
+    top: 45%;
+    left: 61%;
+}
+
+.choose-korpus__marker--marker1-6 {
+    top: 45%;
+    left: 37%;
+}
+
+.choose-korpus__marker--marker3-1 {
+    top: 43%;
+    left: 70%;
+}
+
+.choose-korpus__marker--marker3-2 {
+    top: 60%;
+    left: 50%;
+}
+
+.choose-korpus__marker--marker3-3 {
+    top: 35%;
+    left: 36%;
+}
+
+.choose-korpus__marker--marker3-4 {
+    top: 55%;
+    left: 25%;
+}
+
+.choose-korpus__marker--marker3-5 {
+    top: 40%;
+    left: 60%;
+}
+
+.choose-korpus__marker--marker3-6 {
+    top: 60%;
+    left: 46%;
+}
+
+.choose-korpus__marker--marker3-7 {
+    top: 35%;
+    left: 33%;
+}
+.choose-korpus__marker--marker2-1 {
+    top: 38%;
+    left: 36%;
+}
+
+.choose-korpus__marker--marker2-2 {
+    top: 60%;
+    left: 45%;
+}
+
+.choose-korpus__marker--marker2-3 {
+    top: 35%;
+    left: 56%;
+}
+
+.choose-korpus__marker--marker2-4 {
+    top: 55%;
+    left: 65%;
+}
+
+.choose-korpus__marker--marker2-5 {
+    top: 43%;
+    left: 76%;
+}
+
+.choose-korpus__marker--marker2-6 {
+    top: 60%;
+    left: 50%;
+}
+
+.choose-korpus__marker--marker2-7 {
+    top: 45%;
+    left: 67%;
+}
+
 .pin {
+    pointer-events: none;
     width: 46px;
     height: 46px;
     -webkit-border-radius: 50% 50% 50% 0;
@@ -136,6 +275,54 @@ svg .korp:hover{
 }
 .choose-korpus__marker--marker1-4 .pin:after{
     content: '4';
+}
+.choose-korpus__marker--marker1-5 .pin:after{
+    content: '5';
+}
+.choose-korpus__marker--marker1-6 .pin:after{
+    content: '6';
+}
+.choose-korpus__marker--marker3-1 .pin:after{
+    content: '1';
+}
+.choose-korpus__marker--marker3-2 .pin:after{
+    content: '2';
+}
+.choose-korpus__marker--marker3-3 .pin:after{
+    content: '3';
+}
+.choose-korpus__marker--marker3-4 .pin:after{
+    content: '4';
+}
+.choose-korpus__marker--marker3-5 .pin:after{
+    content: '5';
+}
+.choose-korpus__marker--marker3-6 .pin:after{
+    content: '6';
+}
+.choose-korpus__marker--marker3-7 .pin:after{
+    content: '7';
+}
+.choose-korpus__marker--marker2-1 .pin:after{
+    content: '1';
+}
+.choose-korpus__marker--marker2-2 .pin:after{
+    content: '2';
+}
+.choose-korpus__marker--marker2-3 .pin:after{
+    content: '3';
+}
+.choose-korpus__marker--marker2-4 .pin:after{
+    content: '4';
+}
+.choose-korpus__marker--marker2-5 .pin:after{
+    content: '5';
+}
+.choose-korpus__marker--marker2-6 .pin:after{
+    content: '6';
+}
+.choose-korpus__marker--marker2-7 .pin:after{
+    content: '7';
 }
 .pulse {
     background: rgba(0,0,0,0.2);
@@ -297,7 +484,6 @@ svg .korp:hover{
   top: -20px;
   left: 30px;
   opacity: .9;
-  display: none;
 }
 
 .korp-table__caption {
