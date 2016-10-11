@@ -28,6 +28,7 @@ body{
     padding: 20px;
     box-sizing: border-box;
     box-shadow: -10px 12px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
 }
 
 .main-menu a{
@@ -60,6 +61,7 @@ body{
     box-sizing: border-box;
     box-shadow: -10px 12px 10px rgba(0,0,0,0.5);
     transition: 0.6s;
+    z-index: 1000;
 }
 
 .top-link:hover{
@@ -95,6 +97,10 @@ body{
     vertical-align: middle;
 }
 
+.top-link a {
+  font-size: 13px;
+}
+
 .top-link img, .bottom-link img{
     margin-bottom: 10px;
     height: 60px;
@@ -108,7 +114,11 @@ body{
     top: 150px;
 }
 
-.top-link--korpus span{
+.top-link--section{
+    top: 260px;
+}
+
+.top-link span{
     font-size: 36px;
     display: block;
     margin-top: -10px;
@@ -116,6 +126,11 @@ body{
 
 .top-link--korpus:hover{
     top: 152px;
+    background: rgba(212,87,67,.85);
+}
+
+.top-link--section:hover{
+    top: 262px;
     background: rgba(212,87,67,.85);
 }
 
