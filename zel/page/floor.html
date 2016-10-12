@@ -51,6 +51,17 @@
             <div class="legend__item legend__item--white"></div>
             <div class="legend__item legend__item--green"></div>
           </div>
+          <div class="flat-info">
+            <div class="flat-info__caption">
+              <span id="flat-rooms">1</span>-комнатная квартира <span id="square">41.4</span> м<sup>2</sup>
+            </div>
+            <div class="flat-info__price">
+              <span id="flat-price">2.300.000</span> ₽
+            </div>
+            <div class="flat-info__status">
+              <span id="flat-status">Квартира на аукционе</span>
+            </div>
+          </div>
         </div>
         <div class="floor-plan floor-plan--plan1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
@@ -72,14 +83,15 @@
             <path class="floor" d="M511.4 130.3h63.9v48.1h-63.9z"/>
             <path class="floor" d="M511.4 83.6h63.9v46.7h-63.9z"/>
 
-            <path class="plan plan--green" d="M862 443.2H712.3l-.8 151.7-73.1-2.4V288.8h149.4V251h54.6l19.6 12.1z"/>
-            <path class="plan plan--red" d="M862 406.9h151.4V254.3H960l-22.3 11.5v24.7H862z"/>
-            <path class="plan" d="M1164.6 407.3h151.7V289.8h-75.8v-25.9l-20.9-12.5h-55z"/>
-            <path class="plan" d="M1316.3 442.7V262.8l21.6-11.4h54.3v37.4l148.5 1.6v304.7h-74.2l.8-153.2z"/>
-            <path class="plan plan--green" d="M1467.3 441.9l-.8 153.2h-75.1v37.4h-55.3l-19.8-10.8v-26.6h-75.8V441.9z"/>
-            <path class="plan" d="M1240.5 441.9h-151.9v190.6h55.9l20-11.5v-26.1l76 .2z"/>
-            <path class="plan plan--red" d="M1088.6 632.5V441.9H937.7v153.2h75.4V621l18 11.5z"/>
-            <path class="plan" d="M937.7 441.9v153.2H862V621l-18.6 11.5h-54.9v-37.6h-77l.8-151.7z"/>
+
+            <path class="plan plan--green" onmouseover="flatInfoShow(3)" onmouseleave="flatInfoHide()" d="M862 443.2H712.3l-.8 151.7-73.1-2.4V288.8h149.4V251h54.6l19.6 12.1z"/>
+            <path class="plan plan--red"  onmouseover="flatInfoShow(1)" onmouseleave="flatInfoHide()" d="M862 406.9h151.4V254.3H960l-22.3 11.5v24.7H862z"/>
+            <path class="plan"  onmouseover="flatInfoShow(1)" onmouseleave="flatInfoHide()" d="M1164.6 407.3h151.7V289.8h-75.8v-25.9l-20.9-12.5h-55z"/>
+            <path class="plan"  onmouseover="flatInfoShow(3)" onmouseleave="flatInfoHide()" d="M1316.3 442.7V262.8l21.6-11.4h54.3v37.4l148.5 1.6v304.7h-74.2l.8-153.2z"/>
+            <path class="plan plan--green"  onmouseover="flatInfoShow(2)" onmouseleave="flatInfoHide()" d="M1467.3 441.9l-.8 153.2h-75.1v37.4h-55.3l-19.8-10.8v-26.6h-75.8V441.9z"/>
+            <path class="plan"  onmouseover="flatInfoShow(1)" onmouseleave="flatInfoHide()" d="M1240.5 441.9h-151.9v190.6h55.9l20-11.5v-26.1l76 .2z"/>
+            <path class="plan plan--red"  onmouseover="flatInfoShow(1)" onmouseleave="flatInfoHide()" d="M1088.6 632.5V441.9H937.7v153.2h75.4V621l18 11.5z"/>
+            <path class="plan"  onmouseover="flatInfoShow(2)" onmouseleave="flatInfoHide()" d="M937.7 441.9v153.2H862V621l-18.6 11.5h-54.9v-37.6h-77l.8-151.7z"/>
           </svg>
         </div>
 
@@ -100,10 +112,20 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+    $(document).ready(function(){
+$('body').fadeIn(800);
+});
         $(".floor").click(function(){
           $(".floor").removeClass("active-floor");
           $(this).addClass("active-floor");
         })
+        function flatInfoShow(number) {
+            $("#flat-rooms").html(number);
+            document.querySelector('.flat-info').style.visibility = "visible";
+        }
+        function flatInfoHide() {
+            document.querySelector('.flat-info').style.visibility = "hidden";
+        }
     </script>
 </body>
 </html>

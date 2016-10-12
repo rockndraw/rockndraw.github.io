@@ -49,6 +49,7 @@
 
     <div class="pagewrapper" >
         <div class="choose-korpus choose-section2">
+          <h1 class="choose-korpus__caption">Выберите подъезд</h1>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
               <a xlink:href="prob.html" target="_blank" onmouseover="showTable('2-1')" onmouseleave="hideTable('2-1')">
               <path class="korp" d="M825.8 185.4v720.7l-24.3 5.4-17.9 3.3-18.4 11.9-3.8 5.9-33.6 4.4h-10.3l-15.7-4.4-15.2 6.5h-17.8l-18.5-2.1-13 5.9-17.3-2.7-29.2 11.4-15.2-6v-11.9l-4.9-4.9v-5.9l-14.6-3.8v5.4l-78-18.4-2.7-727 75.3-15.8v-17.8l-2.7-11.9h11.3l1.7 2.7-1.7 10.3 15.2-3.3 2.7-4.9 4.3-1.1 9.3 1.7 6.5-.6.5-8.1h9.2l4.9 3.8v4.9l68.8 10.3-.6 14h15.2l60.7 7.6 7.6 6 13 3.1z"/></a>
@@ -129,6 +130,9 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+    $(document).ready(function(){
+$('body').fadeIn(800);
+});
         function showTable(number) {
             document.querySelector('.choose-korpus__marker--marker'+number+' .korp-table').style.visibility = "visible";
         }

@@ -11,6 +11,7 @@
     <title>Zelenograd</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/countdown.css">
 
 </head>
 <body>
@@ -31,22 +32,69 @@
         <a href="page/8.html"><img src="img/helicopter.png" alt="Аэрофотосъемка"><div>Аэрофотосъемка</div></a>
     </div>
 
-
-
-
-    <div class="pagewrapper">
-        <div class="slider">
-            <div class="slider__slide slider__slide--slide1">
-                <div class="slider-content">
-                    <h1 class="slider__slide__title">АУКЦИОН! ЦЕНУ НА КВАРТИРЫ
-                        НАЗНАЧАЕТЕ ВЫ!</h1>
-                    <h2 class="slider__slide__subtitle">Готовое жилье по цене строящегося</h2>
-                    <h3 class="slider__slide__text">Первая очередь жилого комплекса, состоящая из трех
-                        17-этажных домов сдана и готова к заселению.</h3>
+    <div class="finalcountdown">
+            <h1>До конца аукциона:</h1>
+            <div class="countdown">
+                <div data-time="1368630000" class="timerBrand clearfix">
+                    <div class="clock days first">
+                        <div class="digit_1"><div>0</div></div>
+                        <div class="digit_2"><div>0</div></div>
+                        <div class="label">Дней</div>
+                    </div>
+                    <div class="clock hours">
+                        <div class="digit_1"><div>0</div></div>
+                        <div class="digit_2"><div>0</div></div>
+                        <div class="label">Часов</div>
+                    </div>
+                    <div class="clock minutes">
+                        <div class="digit_1"><div>0</div></div>
+                        <div class="digit_2"><div>0</div></div>
+                        <div class="label">минут</div>
+                    </div>
+                    <div class="clock seconds">
+                        <div class="digit_1"><div>0</div></div>
+                        <div class="digit_2"><div>0</div></div>
+                        <div class="label">секунд</div>
+                    </div>
                 </div>
             </div>
+            <div id="Debug"></div>
         </div>
-    </div>
+
+
+        <div class="pagewrapper">
+            <div class="slider">
+                <div class="slider__slide slider__slide--slide1 active">
+                    <div class="slider-content">
+                      <h1 class="slider__slide__title">АУКЦИОН! ЦЕНУ НА КВАРТИРЫ
+                          НАЗНАЧАЕТЕ ВЫ!</h1>
+                        <h2 class="slider__slide__subtitle">Впервые на рынке недвижимости!</h2>
+                        <h3 class="slider__slide__text">Спешите принять участие в квартирном аукционе! Назначьте свою цену и купите квартиру в ЖК "Зеленоградский" ниже рыночной цены!</h3>
+                    </div>
+                </div>
+                <div class="slider__slide slider__slide--slide2">
+                    <div class="slider-content">
+                      <h1 class="slider__slide__title">ДОМА СДАНЫ! ПОРА ЗАСЕЛЯТЬСЯ!</h1>
+                        <h2 class="slider__slide__subtitle">Готовое жилье по цене строящегося</h2>
+                        <h3 class="slider__slide__text">Первая очередь жилого комплекса, состоящая из трех
+                            17-этажных домов сдана и готова к заселению.</h3>
+                    </div>
+                </div>
+                <div class="slider__slide slider__slide--slide3">
+                    <div class="slider-content">
+                      <h1 class="slider__slide__title">ДОМА СДАНЫ! ПОРА ЗАСЕЛЯТЬСЯ!</h1>
+                        <h2 class="slider__slide__subtitle">Готовое жилье по цене строящегося</h2>
+                        <h3 class="slider__slide__text">Первая очередь жилого комплекса, состоящая из трех
+                            17-этажных домов сдана и готова к заселению.</h3>
+                    </div>
+                </div>
+                <ul class="slider__button-list">
+                    <li class="slider__button-item active"></li>
+                    <li class="slider__button-item"></li>
+                    <li class="slider__button-item"></li>
+                </ul>
+            </div>
+        </div>
     <footer class="footer">
         <div class="footer-col">
             ©2016 ГК «Сибпромстрой»<br/>
@@ -58,5 +106,18 @@
         </div>
         <div class="footer-col footer-col--third">+7 (499) 215-69-04</div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script>
+    $(document).ready(function(){
+$('body').fadeIn(800);
+});
+        $('.slider__button-item').click(function(){
+            var number=$(this).index();
+            $('.slider__button-item, .slider__slide ').removeClass('active');
+            $('.slider__button-item').eq(number).addClass('active');
+            $('.slider__slide ').eq(number).addClass('active');
+        });
+    </script>
 </body>
 </html>

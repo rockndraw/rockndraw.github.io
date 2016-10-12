@@ -665,3 +665,24 @@ svg .plan--red:hover{
 .legend__item--green:after {
   content: 'Квартира на аукционе';
 }
+
+.flat-info {
+  position: absolute;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  left: 42%;
+  top: 66%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.flat-info__price {
+  font-size: 32px;
+  padding-top: 10px;
+}
+
+.flat-info__status {
+  font-size: 14px;
+  padding-top: 10px;
+}
