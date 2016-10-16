@@ -48,6 +48,12 @@
     background-size: contain;
 }
 
+.params{
+    background: url(../img/params.jpg);
+    background-size: contain;
+}
+
+
 .korp{
     fill:rgba(255,255,255,.3);
     stroke:#fff;
@@ -107,8 +113,13 @@ svg .floor:hover, svg .active-floor{
         background-size: contain;
     }
 
-    .choose-floor{
+    .choose-floor {
         background: url(../img/floor.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .params {
+        background: url(../img/params.jpg) no-repeat;
         background-size: contain;
     }
 }
@@ -685,4 +696,37 @@ svg .plan--red:hover{
 .flat-info__status {
   font-size: 14px;
   padding-top: 10px;
+}
+
+.params-table {
+  position: absolute;
+  left: 23%;
+  top: 10%;
+  width: 57%;
+}
+
+.params-table thead tr td{
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.params-table tbody tr td{
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  border: none;
+}
+
+.params-table tbody tr:nth-child(odd) {
+  background: rgba(246, 81, 64,.5);
+}
+
+.params-table tbody tr:hover {
+  background: rgba(243, 224, 76,.8);
 }
